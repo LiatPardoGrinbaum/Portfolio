@@ -15,7 +15,7 @@
 .header-inner {
   @include flex(center, space-between, row);
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 2.5rem;
 }
 .logo {
   color: $primaryColor;
@@ -25,9 +25,12 @@
   li {
     list-style: none;
     padding: 1rem;
-    box-sizing: border-box;
     font-size: 1.1rem;
     color: $primaryColor;
+    transition: 0.3s;
+    &:hover {
+      color: $secondaryColor;
+    }
   }
   a {
     text-decoration: none;

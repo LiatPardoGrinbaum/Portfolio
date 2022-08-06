@@ -1,4 +1,4 @@
-.home, #about {
+#home, #about {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +14,7 @@
   flex-direction: column;
 }
 
-.home, #about {
+#home, #about {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,7 +50,7 @@
   align-items: center;
   flex-direction: row;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 2.5rem;
 }
 
 .logo {
@@ -66,9 +66,12 @@
 .navbar li {
   list-style: none;
   padding: 1rem;
-  box-sizing: border-box;
   font-size: 1.1rem;
   color: #333;
+  transition: 0.3s;
+}
+.navbar li:hover {
+  color: rgb(126, 98, 186);
 }
 .navbar a {
   text-decoration: none;
