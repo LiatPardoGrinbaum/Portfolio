@@ -1,0 +1,35 @@
+@import "./variables";
+
+@mixin flex($align, $justify, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+.header-container {
+  @include flex(center, center, row);
+  border-bottom: 2px solid $secondaryColor;
+  width: 100%;
+}
+.header-inner {
+  @include flex(center, space-between, row);
+  width: 100%;
+  padding: 1rem;
+}
+.logo {
+  color: $primaryColor;
+}
+.navbar {
+  @include flex(center, center, row);
+  li {
+    list-style: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    color: $primaryColor;
+  }
+  a {
+    text-decoration: none;
+  }
+}

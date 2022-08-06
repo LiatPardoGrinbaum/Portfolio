@@ -1,0 +1,7 @@
+@import "./home";
+
+#about {
+  @extend .home;
+  background: paleturquoise;
+  justify-content: center;
+}

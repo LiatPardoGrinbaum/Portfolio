@@ -1,0 +1,14 @@
+@mixin flex($align, $justify, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  height: 100vh;
+  flex-direction: $direction;
+}
+
+#home {
+  @include flex(center, space-between, column);
+}
+.home-inner {
+  @include flex(center, center, column);
+}

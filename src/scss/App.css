@@ -1,0 +1,79 @@
+.home, #about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.home-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.home, #about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.home-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#about {
+  background: paleturquoise;
+  justify-content: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 2px solid rgb(126, 98, 186);
+  width: 100%;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 1rem;
+}
+
+.logo {
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.navbar li {
+  list-style: none;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  color: #333;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+.span_purple {
+  color: rgb(126, 98, 186);
+}/*# sourceMappingURL=App.css.map */
