@@ -30,11 +30,40 @@
 .home-inner .home-inner-left .span_white {
   color: white;
 }
+.home-inner .home-inner-left button {
+  background: rgb(100, 66, 175);
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.home-inner .home-inner-left button:hover {
+  background: rgb(83, 146, 71);
+}
+.home-inner .home-inner-left .fa-file-arrow-down {
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
+}
 .home-inner .home-inner-right {
-  width: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  width: 30rem;
   height: 30rem;
-  background: url("../assets/Appleseeds_small.jpg") no-repeat center center/cover;
   border-radius: 50%;
+  box-shadow: rgba(249, 249, 249, 0.25) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
+}
+.home-inner .home-inner-right .home-inner-image {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background: url("../assets/Appleseeds_small.jpg") no-repeat center center/cover;
   box-shadow: rgba(249, 249, 249, 0.25) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
 }
 
@@ -70,11 +99,40 @@
 .home-inner .home-inner-left .span_white {
   color: white;
 }
+.home-inner .home-inner-left button {
+  background: rgb(100, 66, 175);
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.home-inner .home-inner-left button:hover {
+  background: rgb(83, 146, 71);
+}
+.home-inner .home-inner-left .fa-file-arrow-down {
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
+}
 .home-inner .home-inner-right {
-  width: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  width: 30rem;
   height: 30rem;
-  background: url("../assets/Appleseeds_small.jpg") no-repeat center center/cover;
   border-radius: 50%;
+  box-shadow: rgba(249, 249, 249, 0.25) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
+}
+.home-inner .home-inner-right .home-inner-image {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background: url("../assets/Appleseeds_small.jpg") no-repeat center center/cover;
   box-shadow: rgba(249, 249, 249, 0.25) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
 }
 
@@ -94,11 +152,13 @@
   position: fixed;
   top: 0;
   transition: 0.4s ease;
+  background: rgba(16, 7, 23, 0.8);
 }
 
 .navbar-active {
   background: rgb(28, 5, 47);
   height: 7rem;
+  opacity: 0.95;
 }
 
 .header-inner {

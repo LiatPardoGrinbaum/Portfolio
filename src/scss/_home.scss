@@ -30,12 +30,39 @@
     .span_white {
       color: white;
     }
+
+    button {
+      background: $thirdColor;
+      padding: 0.5rem 1rem;
+      font-size: 1.3rem;
+      font-family: "Source Sans Pro", sans-serif;
+      color: white;
+      margin-top: 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: 0.3s ease-in;
+      &:hover {
+        background: rgb(83, 146, 71);
+      }
+    }
+    .fa-file-arrow-down {
+      font-size: 1.5rem;
+      margin-right: 0.3rem;
+    }
   }
   .home-inner-right {
-    width: 22rem;
+    @include flex(center, center, column);
+    width: 30rem;
     height: 30rem;
-    background: url("../assets/Appleseeds_small.jpg") no-repeat center center/cover;
+    // background: url("../assets/Appleseeds_small.jpg") no-repeat center center/contain;
     border-radius: 50%;
     box-shadow: rgba(249, 249, 249, 0.25) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
+    .home-inner-image {
+      width: 25rem;
+      height: 25rem;
+      border-radius: 50%;
+      background: url("../assets/Appleseeds_small.jpg") no-repeat center center/cover;
+      box-shadow: rgba(249, 249, 249, 0.25) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
+    }
   }
 }
