@@ -9,27 +9,53 @@
 
 .header-container {
   @include flex(center, center, row);
-  border-bottom: 2px solid $secondaryColor;
+  // border-bottom: 2px solid $secondaryColor;
   width: 100%;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  transition: 0.4s ease;
+}
+.navbar-active {
+  background: rgb(28, 5, 47);
+  height: 7rem;
 }
 .header-inner {
   @include flex(center, space-between, row);
-  width: 100%;
-  padding: 1rem 2.5rem;
+  width: 80%;
+  // padding: 2rem 2.5rem;
+
+  align-items: baseline;
 }
 .logo {
-  color: $primaryColor;
+  // color: $primaryColor;
+  @include flex(center, center, column);
+  h2 {
+    // font-family: "Source Sans Pro", sans-serif;
+    font-family: "Cinzel", serif;
+    color: white;
+    // text-shadow: 0px 0px 8px $secondaryColor;
+    font-size: 1.8rem;
+  }
+  // h1 {
+  //   font-family: "Source Sans Pro", sans-serif;
+  //   color: white;
+  //   text-shadow: 0px 0px 8px $secondaryColor;
+  // }
 }
 .navbar {
   @include flex(center, center, row);
   li {
     list-style: none;
-    padding: 1rem;
-    font-size: 1.1rem;
-    color: $primaryColor;
+    padding: 0rem 1rem;
+    font-size: 1.3rem;
+    color: $secondaryColor;
+    font-family: "Cinzel", serif;
+
     transition: 0.3s;
     &:hover {
-      color: $secondaryColor;
+      color: white;
+      text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
     }
   }
   a {

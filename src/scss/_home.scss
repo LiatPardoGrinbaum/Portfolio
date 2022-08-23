@@ -8,7 +8,34 @@
 
 #home {
   @include flex(center, space-between, column);
+  background: url("../assets/colorful-abstract-nebula-space-background.jpg") no-repeat center center/cover;
+  // background: rgb(28, 5, 47);
+  height: 100vh;
 }
 .home-inner {
-  @include flex(center, center, column);
+  @include flex(center, space-around, row);
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 6rem;
+  width: 80%;
+  .home-inner-left {
+    h1 {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 2.8rem;
+    }
+    .span_purple {
+      color: $secondaryColor;
+      font-size: 4rem;
+    }
+    .span_white {
+      color: white;
+    }
+  }
+  .home-inner-right {
+    width: 22rem;
+    height: 30rem;
+    background: url("../assets/Appleseeds_small.jpg") no-repeat center center/cover;
+    border-radius: 50%;
+    box-shadow: rgba(249, 249, 249, 0.25) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
+  }
 }

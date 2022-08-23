@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [navbar, setNavbar] = useState(false);
+  window.addEventListener("scroll", changeNavbarStyle);
+  function changeNavbarStyle() {
+    if (window.scrollY >= 150) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  }
   return (
-    <div className="header-container">
+    <div className={navbar ? "header-container navbar-active" : "header-container "}>
       {/* //!add smooth scrool when click links on the same page */}
       <div className="header-inner">
         <div className="logo">
@@ -15,11 +24,9 @@ const Header = () => {
           <a href="#about">
             <li>About</li>
           </a>
-          <a href="#skills">
-            <li>Skills</li>
-          </a>
+
           <a href="#projects">
-            <li>Projects</li>
+            <li>Portfolio</li>
           </a>
           <a href="#contact">
             <li>Contact</li>

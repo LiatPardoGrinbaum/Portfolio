@@ -1,8 +1,9 @@
+@import "./variables";
 @import "./home";
 @import "./about";
 @import "./header";
 @import "./variables";
 
-.span_purple {
-  color: $secondaryColor;
+.App {
+  position: relative;
 }
