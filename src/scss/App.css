@@ -20,12 +20,12 @@
   width: 80%;
 }
 .home-inner .home-inner-left h1 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 2.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
 }
 .home-inner .home-inner-left .span_purple {
   color: rgb(148, 122, 205);
-  font-size: 4rem;
+  font-size: 2.6rem;
 }
 .home-inner .home-inner-left .span_white {
   color: white;
@@ -33,7 +33,7 @@
 .home-inner .home-inner-left button {
   background: rgb(100, 66, 175);
   padding: 0.5rem 1rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   margin-top: 1rem;
@@ -45,8 +45,8 @@
   background: rgb(83, 146, 71);
 }
 .home-inner .home-inner-left .fa-file-arrow-down {
-  font-size: 1.5rem;
-  margin-right: 0.3rem;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
 }
 .home-inner .home-inner-right {
   display: flex;
@@ -89,12 +89,12 @@
   width: 80%;
 }
 .home-inner .home-inner-left h1 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 2.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
 }
 .home-inner .home-inner-left .span_purple {
   color: rgb(148, 122, 205);
-  font-size: 4rem;
+  font-size: 2.6rem;
 }
 .home-inner .home-inner-left .span_white {
   color: white;
@@ -102,7 +102,7 @@
 .home-inner .home-inner-left button {
   background: rgb(100, 66, 175);
   padding: 0.5rem 1rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   margin-top: 1rem;
@@ -114,8 +114,8 @@
   background: rgb(83, 146, 71);
 }
 .home-inner .home-inner-left .fa-file-arrow-down {
-  font-size: 1.5rem;
-  margin-right: 0.3rem;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
 }
 .home-inner .home-inner-right {
   display: flex;
@@ -138,11 +138,17 @@
 
 #about {
   background: rgb(28, 5, 47);
-  justify-content: center;
+  justify-content: flex-start;
   height: 100vh;
+  padding: 2rem;
+}
+#about h1 {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(148, 122, 205);
+  border-bottom: 2px solid white;
 }
 
-.header-container {
+.navbar-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +167,7 @@
   opacity: 0.95;
 }
 
-.header-inner {
+.navbar-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -179,7 +185,7 @@
 .logo h2 {
   font-family: "Cinzel", serif;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .navbar {
@@ -190,11 +196,12 @@
 }
 .navbar li {
   list-style: none;
-  padding: 0rem 1rem;
-  font-size: 1.3rem;
+  padding: 0rem 0.6rem;
+  font-size: 1.15rem;
   color: rgb(148, 122, 205);
   font-family: "Cinzel", serif;
   transition: 0.3s;
+  cursor: pointer;
 }
 .navbar li:hover {
   color: white;
@@ -204,6 +211,62 @@
   text-decoration: none;
 }
 
+.mobile-menu-icon {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .navbar-container .navbar-inner {
+    justify-content: flex-start;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    background: rgb(28, 8, 44);
+    transition: all 0.5s ease-out;
+    z-index: 2;
+  }
+  .navbar-mobile li {
+    list-style: none;
+    padding: 0.5rem 0.6rem;
+    font-size: 1.15rem;
+    color: white;
+    font-family: "Cinzel", serif;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .navbar-mobile li:hover {
+    color: white;
+    text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+  }
+  .navbar-mobile a {
+    text-decoration: none;
+  }
+  .navbar-inner {
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: 1.8rem;
+    right: 1.2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+}
 .App {
   position: relative;
 }/*# sourceMappingURL=App.css.map */

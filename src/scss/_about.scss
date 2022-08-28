@@ -3,6 +3,12 @@
 #about {
   @extend #home;
   background: rgb(28, 5, 47);
-  justify-content: center;
+  justify-content: flex-start;
   height: 100vh;
+  padding: 2rem;
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    color: $secondaryColor;
+    border-bottom: 2px solid white;
+  }
 }

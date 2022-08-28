@@ -20,12 +20,13 @@
   width: 80%;
   .home-inner-left {
     h1 {
-      font-family: "Source Sans Pro", sans-serif;
-      font-size: 2.8rem;
+      // font-family: "Source Sans Pro", sans-serif;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.2rem;
     }
     .span_purple {
       color: $secondaryColor;
-      font-size: 4rem;
+      font-size: 2.6rem;
     }
     .span_white {
       color: white;
@@ -34,7 +35,7 @@
     button {
       background: $thirdColor;
       padding: 0.5rem 1rem;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-family: "Source Sans Pro", sans-serif;
       color: white;
       margin-top: 1rem;
@@ -46,8 +47,8 @@
       }
     }
     .fa-file-arrow-down {
-      font-size: 1.5rem;
-      margin-right: 0.3rem;
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
     }
   }
   .home-inner-right {

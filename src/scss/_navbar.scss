@@ -1,0 +1,121 @@
+@import "./variables";
+
+@mixin flex($align, $justify, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+.navbar-container {
+  @include flex(center, center, row);
+  // border-bottom: 2px solid $secondaryColor;
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  transition: 0.4s ease;
+  background: rgba(16, 7, 23, 0.8);
+}
+.navbar-active {
+  background: rgb(28, 5, 47);
+  height: 7rem;
+  opacity: 0.95;
+}
+.navbar-inner {
+  @include flex(center, space-between, row);
+  width: 80%;
+  // padding: 2rem 2.5rem;
+
+  align-items: baseline;
+}
+.logo {
+  // color: $primaryColor;
+  @include flex(center, center, column);
+  h2 {
+    // font-family: "Source Sans Pro", sans-serif;
+    font-family: "Cinzel", serif;
+    color: white;
+    // text-shadow: 0px 0px 8px $secondaryColor;
+    font-size: 1.6rem;
+  }
+}
+.navbar {
+  @include flex(center, center, row);
+  li {
+    list-style: none;
+    padding: 0rem 0.6rem;
+    font-size: 1.15rem;
+    color: $secondaryColor;
+    font-family: "Cinzel", serif;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.mobile-menu-icon {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .navbar-container {
+    .navbar-inner {
+      justify-content: flex-start; //logo to the left
+    }
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar-mobile {
+    @include flex(center, center, column);
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    background: rgb(28, 8, 44);
+    transition: all 0.5s ease-out;
+    z-index: 2;
+    li {
+      list-style: none;
+      padding: 0.5rem 0.6rem;
+      font-size: 1.15rem;
+      color: white;
+      font-family: "Cinzel", serif;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+        text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .navbar-inner {
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: 1.8rem;
+    right: 1.2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    // .fa-bars {
+    //   color: $secondaryColor;
+    // }
+  }
+}
