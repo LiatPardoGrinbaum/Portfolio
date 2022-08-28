@@ -16,6 +16,7 @@
   top: 0;
   transition: 0.4s ease;
   background: rgba(16, 7, 23, 0.8);
+  z-index: 1;
 }
 .navbar-active {
   background: rgb(28, 5, 47);
@@ -68,6 +69,9 @@
   .navbar-container {
     .navbar-inner {
       justify-content: flex-start; //logo to the left
+      //below I change these props because of Fade comp of react reveal which changes the properties...
+      width: 100%;
+      padding: 0rem 2rem;
     }
   }
   .navbar {
@@ -76,7 +80,7 @@
   .navbar-mobile {
     @include flex(center, center, column);
     position: absolute;
-    top: 6rem;
+    top: 4rem;
     left: 0;
     width: 100%;
     background: rgb(28, 8, 44);
@@ -100,6 +104,7 @@
       text-decoration: none;
     }
   }
+
   .navbar-inner {
     align-items: center;
     justify-content: center;
@@ -109,7 +114,7 @@
     position: absolute;
     font-size: 30px;
     color: white;
-    top: 1.8rem;
+    top: 0rem;
     right: 1.2rem;
     background: transparent;
     border: none;

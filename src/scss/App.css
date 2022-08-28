@@ -166,7 +166,7 @@
   height: 100vh;
   padding: 2rem;
 }
-#about h1 {
+#about .title h1 {
   font-family: "Montserrat", sans-serif;
   color: rgb(148, 122, 205);
   border-bottom: 2px solid white;
@@ -183,6 +183,7 @@
   top: 0;
   transition: 0.4s ease;
   background: rgba(16, 7, 23, 0.8);
+  z-index: 1;
 }
 
 .navbar-active {
@@ -242,6 +243,8 @@
 @media (max-width: 900px) {
   .navbar-container .navbar-inner {
     justify-content: flex-start;
+    width: 100%;
+    padding: 0rem 2rem;
   }
   .navbar {
     display: none;
@@ -252,7 +255,7 @@
     align-items: center;
     flex-direction: column;
     position: absolute;
-    top: 6rem;
+    top: 4rem;
     left: 0;
     width: 100%;
     background: rgb(28, 8, 44);
@@ -284,7 +287,7 @@
     position: absolute;
     font-size: 30px;
     color: white;
-    top: 1.8rem;
+    top: 0rem;
     right: 1.2rem;
     background: transparent;
     border: none;

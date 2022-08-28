@@ -6,9 +6,11 @@
   justify-content: flex-start;
   height: 100vh;
   padding: 2rem;
-  h1 {
-    font-family: "Montserrat", sans-serif;
-    color: $secondaryColor;
-    border-bottom: 2px solid white;
+  .title {
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      color: $secondaryColor;
+      border-bottom: 2px solid white;
+    }
   }
 }
