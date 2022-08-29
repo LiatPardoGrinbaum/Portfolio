@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div id="about">
+    <section id="about">
       <div className="title">
         <h1>About me</h1>
       </div>
@@ -20,7 +20,13 @@ const About = () => {
         <p>lorem </p>
         <p>lorem </p>
       </div>
-    </div>
+      <div className="skills">
+        Skills icons by
+        <a target="blank" href="https://icons8.com">
+          Icons8
+        </a>
+      </div>
+    </section>
   );
 };
 
