@@ -22,6 +22,7 @@ const Navbar = () => {
       setIsMobile(false);
     }
   }
+
   console.log(isMobile);
   return (
     <div className={navbar ? "navbar-container navbar-active" : "navbar-container "}>
