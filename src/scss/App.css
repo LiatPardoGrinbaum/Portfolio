@@ -169,7 +169,7 @@
   }
 }
 #about {
-  background: rgb(28, 5, 47);
+  background: rgb(16, 7, 23);
   justify-content: flex-start;
   height: 100vh;
   padding: 2rem;
@@ -177,7 +177,11 @@
 #about .title h1 {
   font-family: "Montserrat", sans-serif;
   color: rgb(148, 122, 205);
-  border-bottom: 2px solid white;
+}
+#about .content {
+  margin-top: 1rem;
+  border-radius: 2rem;
+  color: white;
 }
 
 .navbar-container {
@@ -195,7 +199,6 @@
 }
 
 .navbar-active {
-  background: rgb(28, 5, 47);
   height: 7rem;
   opacity: 0.95;
 }
