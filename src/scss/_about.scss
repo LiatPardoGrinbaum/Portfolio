@@ -1,35 +1,96 @@
 @import "./home";
 
 #about {
-  background: rgb(207, 176, 227);
+  background: white;
   padding-top: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: column;
 
   .about-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
-    height: 100vh;
+    width: 80%;
     flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
+  .title {
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      // color: rgba(5, 121, 90, 0.664);
+      color: $secondaryColor;
+      font-weight: bold;
+      margin-bottom: 0.8rem;
+      border-bottom: 2px solid green;
 
+      // border-bottom: 2px solid white;
+    }
+  }
   .content {
     margin-top: 1rem;
+    padding: 1rem;
     // background: rgb(5, 0, 8);
     // box-shadow: rgba(223, 208, 208, 0.5) 0px 0px 5px 0px, rgba(231, 192, 192, 0.1) 0px 0px 1px 0px;
     // width: 25rem;
     border-radius: 2rem;
     color: white;
-    .title {
-      h1 {
-        font-family: "Montserrat", sans-serif;
-        color: $secondaryColor;
-        // border-bottom: 2px solid white;
-      }
-    }
+    width: 50%;
+    min-height: 20rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
+  .skills {
+    margin-top: 1rem;
+    width: 40%;
+    border-radius: 2rem;
+    color: white;
+    height: 20rem;
+    // background: rgba(255, 255, 255, 0.452);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  }
+}
+
+//skill component:
+.skill-box {
+  img {
+    width: 70px;
+  }
+}
+
+//skill tooltip:
+.tooltip {
+  display: inline-block;
+  position: relative;
+
+  text-align: left;
+}
+
+.tooltip .bottom {
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 10px 20px;
+  color: #444444;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  display: none;
+}
+
+.tooltip:hover .bottom {
+  display: block;
 }

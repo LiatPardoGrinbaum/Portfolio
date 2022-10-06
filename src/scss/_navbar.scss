@@ -20,6 +20,7 @@
 .navbar-active {
   // background: rgb(28, 5, 47);
   height: 4rem;
+  box-shadow: rgba(190, 199, 208, 0.2) 0px 5px 15px;
 }
 .navbar-inner {
   @include flex(center, space-between, row);
@@ -43,12 +44,15 @@
     padding: 0rem 0.6rem;
     font-size: 1.15rem;
     color: $secondaryColor;
-    font-family: "Cinzel", serif;
+    // font-family: "Cinzel", serif;.
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     transition: 0.3s;
     cursor: pointer;
 
     &:hover {
       color: white;
+
       text-shadow: -2px 1px 10px $thirdColor, -2px 1px 30px $thirdColor;
     }
   }

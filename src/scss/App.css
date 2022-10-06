@@ -173,29 +173,82 @@
   }
 }
 #about {
-  background: rgb(207, 176, 227);
+  background: white;
   padding-top: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: column;
 }
 #about .about-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
-  height: 100vh;
+  width: 80%;
   flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#about .title h1 {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(148, 122, 205);
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid green;
 }
 #about .content {
   margin-top: 1rem;
+  padding: 1rem;
   border-radius: 2rem;
   color: white;
+  width: 50%;
+  min-height: 20rem;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-#about .content .title h1 {
+#about .skills {
+  margin-top: 1rem;
+  width: 40%;
+  border-radius: 2rem;
+  color: white;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skill-box img {
+  width: 70px;
+}
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
+.tooltip .bottom {
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 10px 20px;
+  color: #444444;
+  font-weight: normal;
   font-family: "Montserrat", sans-serif;
-  color: rgb(148, 122, 205);
+  font-size: 13px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  display: none;
+}
+
+.tooltip:hover .bottom {
+  display: block;
 }
 
 .navbar-container {
@@ -214,6 +267,7 @@
 
 .navbar-active {
   height: 4rem;
+  box-shadow: rgba(190, 199, 208, 0.2) 0px 5px 15px;
 }
 
 .navbar-inner {
@@ -248,7 +302,8 @@
   padding: 0rem 0.6rem;
   font-size: 1.15rem;
   color: rgb(148, 122, 205);
-  font-family: "Cinzel", serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   transition: 0.3s;
   cursor: pointer;
 }
