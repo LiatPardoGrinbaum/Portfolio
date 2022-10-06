@@ -16,7 +16,7 @@ const NavbarComp = ({ isMobile, setIsMobile }) => {
                 if (isMobile) return !prev;
               })
             }>
-            home
+            Home
           </Link>
         </li>
         <li>
@@ -31,7 +31,7 @@ const NavbarComp = ({ isMobile, setIsMobile }) => {
                 if (isMobile) return !prev;
               })
             }>
-            about
+            About
           </Link>
         </li>
         <li>
