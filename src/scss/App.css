@@ -1,11 +1,11 @@
-#home, #about {
+#home {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
   width: 100%;
-  background: url("../assets/colorful-abstract-nebula-space-background.jpg") no-repeat center center/cover;
+  background: rgb(252, 247, 255);
 }
 
 .home-inner {
@@ -29,21 +29,23 @@
   font-size: 2.6rem;
 }
 .home-inner .home-inner-left .span_white {
-  color: white;
+  color: rgb(38, 0, 121);
 }
 .home-inner .home-inner-left button {
-  background: rgb(100, 66, 175);
+  background: rgb(38, 0, 121);
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   margin-top: 1rem;
+  border: 0.5px solid black;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: 0.3s ease-in;
 }
 .home-inner .home-inner-left button:hover {
-  background: rgb(83, 146, 71);
+  background: rgba(5, 121, 90, 0.664);
+  border: 0.5px solid rgba(5, 121, 90, 0.953);
 }
 .home-inner .home-inner-left .fa-file-arrow-down {
   font-size: 1.2rem;
@@ -58,7 +60,7 @@
   height: 30rem;
   margin-bottom: 1rem;
   border-radius: 50%;
-  box-shadow: rgba(249, 249, 249, 0.25) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
+  box-shadow: rgba(5, 121, 90, 0.274) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
 }
 .home-inner .home-inner-right .home-inner-image {
   margin: 0.5rem;
@@ -83,14 +85,14 @@
     box-shadow: none;
   }
 }
-#home, #about {
+#home {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
   width: 100%;
-  background: url("../assets/colorful-abstract-nebula-space-background.jpg") no-repeat center center/cover;
+  background: rgb(252, 247, 255);
 }
 
 .home-inner {
@@ -114,21 +116,23 @@
   font-size: 2.6rem;
 }
 .home-inner .home-inner-left .span_white {
-  color: white;
+  color: rgb(38, 0, 121);
 }
 .home-inner .home-inner-left button {
-  background: rgb(100, 66, 175);
+  background: rgb(38, 0, 121);
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   margin-top: 1rem;
+  border: 0.5px solid black;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: 0.3s ease-in;
 }
 .home-inner .home-inner-left button:hover {
-  background: rgb(83, 146, 71);
+  background: rgba(5, 121, 90, 0.664);
+  border: 0.5px solid rgba(5, 121, 90, 0.953);
 }
 .home-inner .home-inner-left .fa-file-arrow-down {
   font-size: 1.2rem;
@@ -143,7 +147,7 @@
   height: 30rem;
   margin-bottom: 1rem;
   border-radius: 50%;
-  box-shadow: rgba(249, 249, 249, 0.25) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
+  box-shadow: rgba(5, 121, 90, 0.274) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
 }
 .home-inner .home-inner-right .home-inner-image {
   margin: 0.5rem;
@@ -169,19 +173,29 @@
   }
 }
 #about {
-  background: rgb(16, 7, 23);
-  justify-content: flex-start;
+  background: rgb(207, 176, 227);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  padding: 2rem;
+  flex-direction: column;
 }
-#about .title h1 {
-  font-family: "Montserrat", sans-serif;
-  color: rgb(148, 122, 205);
+#about .about-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  flex-direction: row;
 }
 #about .content {
   margin-top: 1rem;
   border-radius: 2rem;
   color: white;
+}
+#about .content .title h1 {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(148, 122, 205);
 }
 
 .navbar-container {
@@ -194,13 +208,12 @@
   position: fixed;
   top: 0;
   transition: 0.4s ease;
-  background: rgba(16, 7, 23, 0.8);
+  background: rgb(255, 255, 255);
   z-index: 1;
 }
 
 .navbar-active {
-  height: 7rem;
-  opacity: 0.95;
+  height: 4rem;
 }
 
 .navbar-inner {
@@ -220,7 +233,7 @@
 }
 .logo h2 {
   font-family: "Cinzel", serif;
-  color: white;
+  color: rgb(148, 122, 205);
   font-size: 1.6rem;
 }
 
@@ -241,7 +254,7 @@
 }
 .navbar li:hover {
   color: white;
-  text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+  text-shadow: -2px 1px 10px rgb(38, 0, 121), -2px 1px 30px rgb(38, 0, 121);
 }
 .navbar a {
   text-decoration: none;
@@ -294,7 +307,7 @@
     display: block;
     position: absolute;
     font-size: 30px;
-    color: white;
+    color: rgb(148, 122, 205);
     top: 0rem;
     right: 1.2rem;
     background: transparent;

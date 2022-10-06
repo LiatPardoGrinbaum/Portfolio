@@ -9,7 +9,9 @@
 #home {
   @include flex(center, center, column);
   width: 100%;
-  background: url("../assets/colorful-abstract-nebula-space-background.jpg") no-repeat center center/cover;
+  // background: url("../assets/colorful-abstract-nebula-space-background.jpg") no-repeat center center/cover;
+  // background: rgb(16, 7, 23);
+  background: rgb(252, 247, 255);
   // background: rgb(28, 5, 47);
 }
 .home-inner {
@@ -33,7 +35,7 @@
       font-size: 2.6rem;
     }
     .span_white {
-      color: white;
+      color: $thirdColor;
     }
 
     button {
@@ -43,11 +45,13 @@
       font-family: "Source Sans Pro", sans-serif;
       color: white;
       margin-top: 1rem;
+      border: 0.5px solid black;
       border-radius: 0.5rem;
       cursor: pointer;
       transition: 0.3s ease-in;
       &:hover {
-        background: rgb(83, 146, 71);
+        background: rgba(5, 121, 90, 0.664);
+        border: 0.5px solid rgba(5, 121, 90, 0.953);
       }
     }
     .fa-file-arrow-down {
@@ -65,7 +69,7 @@
     margin-bottom: 1rem;
     // background: url("../assets/Appleseeds_small.jpg") no-repeat center center/contain;
     border-radius: 50%;
-    box-shadow: rgba(249, 249, 249, 0.25) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
+    box-shadow: rgba(5, 121, 90, 0.274) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
     .home-inner-image {
       margin: 0.5rem;
       width: 100%;

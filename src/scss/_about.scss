@@ -1,18 +1,22 @@
 @import "./home";
 
 #about {
-  @extend #home;
-  background: rgb(16, 7, 23);
-  justify-content: flex-start;
+  background: rgb(207, 176, 227);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  padding: 2rem;
-  .title {
-    h1 {
-      font-family: "Montserrat", sans-serif;
-      color: $secondaryColor;
-      // border-bottom: 2px solid white;
-    }
+  flex-direction: column;
+
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    flex-direction: row;
   }
+
   .content {
     margin-top: 1rem;
     // background: rgb(5, 0, 8);
@@ -20,5 +24,12 @@
     // width: 25rem;
     border-radius: 2rem;
     color: white;
+    .title {
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        color: $secondaryColor;
+        // border-bottom: 2px solid white;
+      }
+    }
   }
 }
