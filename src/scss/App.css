@@ -190,18 +190,22 @@
   gap: 1rem;
   flex-wrap: wrap;
 }
+#about .title {
+  width: 100%;
+  text-align: left;
+}
 #about .title h1 {
   font-family: "Montserrat", sans-serif;
+  text-align: left;
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
   color: rgb(148, 122, 205);
   font-weight: bold;
   margin-bottom: 0.8rem;
-  border-bottom: 3px solid rgb(99, 162, 99);
+  border-bottom: 3px solid rgb(38, 0, 121);
 }
 #about .content {
   margin-top: 1rem;
   padding: 1rem;
-  border-radius: 2rem;
   color: white;
   width: 50%;
   min-height: 20rem;
@@ -209,20 +213,17 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 #about .skills {
   margin-top: 5rem;
   padding: 1rem;
   width: 40%;
-  border-radius: 2rem;
   color: white;
   height: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .skill-box {
@@ -239,14 +240,18 @@
 }
 
 .tooltip .bottom {
-  top: 40px;
+  top: 55px;
   left: 50%;
   transform: translate(-50%, 50%);
-  padding: 10px 20px;
-  color: #444444;
+  padding: 4px 4px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 2px;
+  background: rgba(68, 68, 68, 0.7803921569);
+  color: white;
   font-weight: normal;
   font-family: "Montserrat", sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   position: absolute;
   z-index: 99999999;
   box-sizing: border-box;
@@ -269,11 +274,11 @@
   transition: 0.4s ease;
   background: rgb(255, 255, 255);
   z-index: 1;
+  box-shadow: rgba(190, 199, 208, 0.2) 0px 5px 15px;
 }
 
 .navbar-active {
   height: 4rem;
-  box-shadow: rgba(190, 199, 208, 0.2) 0px 5px 15px;
 }
 
 .navbar-inner {
@@ -295,6 +300,7 @@
   font-family: "Cinzel", serif;
   color: rgb(148, 122, 205);
   font-size: 1.6rem;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .navbar {
@@ -310,7 +316,7 @@
   color: rgb(148, 122, 205);
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  transition: 0.3s;
+  transition: 0.6s;
   cursor: pointer;
 }
 .navbar li:hover {
@@ -385,4 +391,20 @@
 }
 .App {
   position: relative;
+}
+
+.content-text {
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.content-subtitle {
+  text-align: center;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  font-weight: 700;
+  border-bottom: 3px solid rgb(38, 0, 121);
 }/*# sourceMappingURL=App.css.map */

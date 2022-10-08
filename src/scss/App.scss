@@ -7,3 +7,18 @@
 .App {
   position: relative;
 }
+
+.content-text {
+  color: $contentText;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.content-subtitle {
+  text-align: center;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: $contentText;
+  font-weight: 700;
+  border-bottom: 3px solid $thirdColor;
+}

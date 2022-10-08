@@ -19,13 +19,16 @@
     flex-wrap: wrap;
   }
   .title {
+    width: 100%;
+    text-align: left;
     h1 {
       font-family: "Montserrat", sans-serif;
+      text-align: left;
       text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
       color: $secondaryColor;
       font-weight: bold;
       margin-bottom: 0.8rem;
-      border-bottom: 3px solid rgb(99, 162, 99);
+      border-bottom: 3px solid $thirdColor;
 
       // border-bottom: 2px solid white;
     }
@@ -33,10 +36,11 @@
   .content {
     margin-top: 1rem;
     padding: 1rem;
+
     // background: rgb(5, 0, 8);
     // box-shadow: rgba(223, 208, 208, 0.5) 0px 0px 5px 0px, rgba(231, 192, 192, 0.1) 0px 0px 1px 0px;
     // width: 25rem;
-    border-radius: 2rem;
+    // border-radius: 2rem;
     color: white;
     width: 50%;
     min-height: 20rem;
@@ -44,13 +48,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   .skills {
     margin-top: 5rem;
     padding: 1rem;
     width: 40%;
-    border-radius: 2rem;
+    // border-radius: 2rem;
     color: white;
     height: 20rem;
     // background: rgba(255, 255, 255, 0.452);
@@ -58,7 +62,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     // box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   }
 }
@@ -80,14 +84,18 @@
 }
 
 .tooltip .bottom {
-  top: 40px;
+  top: 55px;
   left: 50%;
   transform: translate(-50%, 50%);
-  padding: 10px 20px;
-  color: #444444;
+  padding: 4px 4px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 2px;
+  background: #444444c7;
+  color: white;
   font-weight: normal;
   font-family: "Montserrat", sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   position: absolute;
   z-index: 99999999;
   box-sizing: border-box;
