@@ -178,7 +178,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  min-height: 100vh;
+  min-height: 60vh;
   flex-direction: column;
 }
 #about .about-container {
@@ -190,40 +190,23 @@
   gap: 1rem;
   flex-wrap: wrap;
 }
-#about .title {
-  width: 100%;
-  text-align: left;
-}
-#about .title h1 {
-  font-family: "Montserrat", sans-serif;
-  text-align: left;
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
-  color: rgb(148, 122, 205);
-  font-weight: bold;
-  margin-bottom: 0.8rem;
-  border-bottom: 3px solid rgb(38, 0, 121);
+#about .box {
+  padding: 1rem;
+  border-radius: 2rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.736);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 #about .content {
-  margin-top: 1rem;
-  padding: 1rem;
-  color: white;
   width: 50%;
-  min-height: 20rem;
-  background: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  margin-top: 1rem;
 }
 #about .skills {
-  margin-top: 5rem;
-  padding: 1rem;
   width: 40%;
-  color: white;
-  height: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  margin-top: 5rem;
 }
 
 .skill-box {
@@ -389,8 +372,41 @@
     padding: 0rem 2rem;
   }
 }
+#portfolio {
+  background: rgb(252, 247, 255);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60vh;
+  flex-direction: column;
+}
+#portfolio .portfolio-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 80%;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .App {
   position: relative;
+}
+
+.title {
+  width: 100%;
+  text-align: left;
+}
+.title h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+  color: rgb(148, 122, 205);
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  border-bottom: 3px solid rgb(38, 0, 121);
 }
 
 .content-text {

@@ -1,0 +1,20 @@
+#portfolio {
+  background: $bg-color-1;
+
+  padding-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60vh;
+  flex-direction: column;
+
+  .portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
