@@ -26,11 +26,12 @@
     // background: rgb(5, 0, 8);
     // box-shadow: rgba(223, 208, 208, 0.5) 0px 0px 5px 0px, rgba(231, 192, 192, 0.1) 0px 0px 1px 0px;
     // width: 25rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     color: white;
 
     // min-height: 20rem;
-    background: rgba(255, 255, 255, 0.736);
+    background: $bg-color-1;
+
     display: flex;
     align-items: center;
     flex-direction: column;
