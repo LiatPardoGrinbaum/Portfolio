@@ -22,6 +22,7 @@
 }
 .home-inner .home-inner-left h1 {
   font-family: "Montserrat", sans-serif;
+  font-family: "Fuzzy Bubbles", cursive;
   font-size: 2.2rem;
 }
 .home-inner .home-inner-left .span_purple {
@@ -34,8 +35,9 @@
 .home-inner .home-inner-left button {
   background: rgb(38, 0, 121);
   padding: 0.5rem 1rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   margin-top: 1rem;
   border: 0.5px solid black;
@@ -109,6 +111,7 @@
 }
 .home-inner .home-inner-left h1 {
   font-family: "Montserrat", sans-serif;
+  font-family: "Fuzzy Bubbles", cursive;
   font-size: 2.2rem;
 }
 .home-inner .home-inner-left .span_purple {
@@ -121,8 +124,9 @@
 .home-inner .home-inner-left button {
   background: rgb(38, 0, 121);
   padding: 0.5rem 1rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   margin-top: 1rem;
   border: 0.5px solid black;
@@ -295,9 +299,9 @@
 .navbar li {
   list-style: none;
   padding: 0rem 0.6rem;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: rgb(148, 122, 205);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Fuzzy Bubbles", cursive;
   font-weight: 700;
   transition: 0.6s;
   cursor: pointer;
@@ -403,12 +407,13 @@
   text-align: left;
 }
 .title h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Fuzzy Bubbles", cursive;
   text-align: left;
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
   color: rgb(148, 122, 205);
   font-weight: bold;
   margin-bottom: 0.8rem;
+  font-size: 1.8rem;
   border-bottom: 3px solid rgb(38, 0, 121);
 }
 
@@ -422,7 +427,7 @@
 .content-subtitle {
   text-align: center;
   width: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Fuzzy Bubbles", cursive;
   color: #333;
   font-weight: 700;
   border-bottom: 3px solid rgb(38, 0, 121);
