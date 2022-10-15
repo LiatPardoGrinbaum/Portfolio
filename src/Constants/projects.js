@@ -1,9 +1,10 @@
+import wecome from "../assets/projects/wecome.png";
 export const projects = [
   {
     name: "Wecome Events",
     description: "bla bla",
     technologies: " bla bla",
-    image: "image link or only name",
+    image: wecome,
     github: "github link if exist",
     demo: "demi link if exist",
     video: "video link if exist",

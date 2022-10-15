@@ -9,10 +9,13 @@ const About = () => {
   return (
     <section id="about">
       <div className="about-container">
+        <div className="title">
+          <h1>
+            <span style={{ color: "rgb(38, 0, 121)" }}>About</span>{" "}
+            <span style={{ color: "rgb(252, 247, 255)" }}>Me</span>
+          </h1>
+        </div>
         <div className="box content">
-          <div className="title">
-            <h1>About me</h1>
-          </div>
           <p className="content-text">
             I grduated Appleseeds Academy Full stack Bootcamp, and hold a bachelor degree in civil engineering from the
             Technion. <br></br>I have a passion for coding and making great UI designs, and currently looking for a
@@ -22,7 +25,7 @@ const About = () => {
 
           <br></br>
         </div>
-        <div className="box skills">
+        <div className=" skills">
           <h1 className="content-subtitle">My Skills</h1>
           <br></br>
           <div className="skills-container">
