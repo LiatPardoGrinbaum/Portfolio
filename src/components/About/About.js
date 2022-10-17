@@ -15,19 +15,22 @@ const About = () => {
             <span style={{ color: "rgb(252, 247, 255)" }}>Me</span>
           </h1>
         </div>
-        <div className="box content">
+        <div className=" content">
           <p className="content-text">
             I grduated Appleseeds Academy Full stack Bootcamp, and hold a bachelor degree in civil engineering from the
-            Technion. <br></br>I have a passion for coding and making great UI designs, and currently looking for a
-            position as a full stack developer.
+            Technion. <br></br>I have hands on experience with front-end and back-end technologies from the bootcamp and
+            as an intern in a start-up company, and I keep learning all the time.<br></br>I have a passion for coding
+            and making great UI designs and currently looking for a position as a full stack developer.<br></br>
+            <br></br>
           </p>
-          <br></br>
-
-          <br></br>
         </div>
+        <div className="title">
+          <h1>
+            <strong style={{ textAlign: "center" }}>My skills:</strong>
+          </h1>
+        </div>
+
         <div className=" skills">
-          <h1 className="content-subtitle">My Skills</h1>
-          <br></br>
           <div className="skills-container">
             <Skill skillImg={reactIcon} skillTitle="React" />
             <Skill skillImg={sassIcon} skillTitle="Sass" />

@@ -208,7 +208,7 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 #about .content {
-  width: 50%;
+  width: 70%;
   margin-top: 1rem;
 }
 #about .skills {
@@ -440,7 +440,6 @@
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
   color: rgb(148, 122, 205);
   font-weight: bold;
-  margin-bottom: 0.8rem;
   font-size: 1.8rem;
 }
 
@@ -449,6 +448,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
   line-height: 1.5;
+  color: rgb(38, 0, 121);
 }
 
 .content-subtitle {
