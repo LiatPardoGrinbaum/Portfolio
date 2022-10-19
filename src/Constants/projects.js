@@ -45,8 +45,9 @@ export const projects = [
     demo: "demi link if exist",
     video: "video link if exist",
   },
+
   {
-    name: "Corona Statistics",
+    name: "Dice Game",
     description: "bla bla",
     technologies: " bla bla",
     image: "image link or only name",
@@ -55,7 +56,7 @@ export const projects = [
     video: "video link if exist",
   },
   {
-    name: "Dice Game",
+    name: "Bucketlist",
     description: "bla bla",
     technologies: " bla bla",
     image: "image link or only name",
