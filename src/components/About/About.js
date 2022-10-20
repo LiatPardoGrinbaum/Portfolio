@@ -1,14 +1,7 @@
 import React from "react";
 import Skill from "./Skill";
-import reactIcon from "../../assets/skills-icons/react-icon.png";
-import nodeIcon from "../../assets/skills-icons/node-icon.png";
-import sassIcon from "../../assets/skills-icons/sass-icon.png";
-import gitIcon from "../../assets/skills-icons/git-icon.png";
-import htmlIcon from "../../assets/skills-icons/html5-icon.png";
-import cssIcon from "../../assets/skills-icons/css3-icon.png";
-import mongodbIcon from "../../assets/skills-icons/mongodb-icon.png";
-import javascriptIcon from "../../assets/skills-icons/javascript-icon.png";
-import mysqlIcon from "../../assets/skills-icons/mysql-icon.png";
+
+import { skills } from "../../Constants/skills";
 
 const About = () => {
   return (
@@ -37,15 +30,9 @@ const About = () => {
 
         <div className=" skills">
           <div className="skills-container">
-            <Skill skillImg={htmlIcon} skillTitle="HTML5" />
-            <Skill skillImg={cssIcon} skillTitle="CSS3" />
-            <Skill skillImg={javascriptIcon} skillTitle="JavaScript" />
-            <Skill skillImg={reactIcon} skillTitle="React" />
-            <Skill skillImg={sassIcon} skillTitle="Sass" />
-            <Skill skillImg={nodeIcon} skillTitle="Node.js" />
-            <Skill skillImg={gitIcon} skillTitle="Git" />
-            <Skill skillImg={mongodbIcon} skillTitle="mongoDB" />
-            <Skill skillImg={mysqlIcon} skillTitle="mySQL" />
+            {skills.map((skill) => {
+              return <Skill skillImg={skill.skillImg} skillTitle={skill.skillTitle} />;
+            })}
           </div>
 
           {/* Skills icons by

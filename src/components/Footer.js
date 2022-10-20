@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       {" "}
       <footer>
-        <p>{new Date().getUTCFullYear()}</p> {/* Outputs 2020 */}
+        <p>{new Date().getUTCFullYear()}</p> {/* Outputs 2022 */}
       </footer>
     </div>
   );
