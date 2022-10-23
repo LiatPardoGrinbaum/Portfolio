@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
 import NavbarComp from "./NavbarComp";
 
-//! need to fix dropdown logics and css!!!
-//! maybe I should seperate it to 2 choises
-
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [isMobile, setIsMobile] = useState(false);

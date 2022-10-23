@@ -39,7 +39,7 @@ const NavbarComp = ({ isMobile, setIsMobile }) => {
             to="portfolio"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-60}
             duration={500}
             onClick={() =>
               setIsMobile((prev) => {

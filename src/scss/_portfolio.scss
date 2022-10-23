@@ -10,16 +10,18 @@
 
   .portfolio-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
-    width: 90%;
+    padding: 1rem;
+    padding-top: 2rem;
+    width: 70%;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 1.4rem;
     flex-wrap: wrap;
 
     .project-box {
-      width: 22rem;
-      height: 25rem;
+      width: 18rem;
+      height: 20rem;
       margin-bottom: 1.5rem;
       border-radius: 2rem;
       background: white;

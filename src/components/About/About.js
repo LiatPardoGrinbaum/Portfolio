@@ -9,8 +9,7 @@ const About = () => {
       <div className="about-container">
         <div className="title">
           <h1>
-            <span style={{ color: "rgb(38, 0, 121)" }}>About</span>{" "}
-            <span style={{ color: "rgb(252, 247, 255)" }}>Me</span>
+            <span style={{ color: "rgb(38, 0, 121)" }}>About Me</span>
           </h1>
         </div>
         <div className=" content">

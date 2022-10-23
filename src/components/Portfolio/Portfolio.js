@@ -8,15 +8,12 @@ const Portfolio = () => {
   };
   return (
     <section id="portfolio">
-      <div className="portfolio-container">
-        {/* <div className="box content">
-          <div className="title">
-            <h1>Portfolio</h1>
-            <p>ddd</p>
-          </div>
-        </div> */}
-        {insertProjects()}
+      <div className="title">
+        <h1>
+          <span style={{ color: "rgb(38, 0, 121)" }}>My Projects</span>
+        </h1>
       </div>
+      <div className="portfolio-container">{insertProjects()}</div>
     </section>
   );
 };
