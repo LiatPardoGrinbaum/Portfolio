@@ -14,7 +14,8 @@
   position: fixed;
   top: 0;
   transition: 0.4s ease;
-  background: rgb(255, 255, 255);
+  background: $bg-color-1;
+  // background: $brightgreen;
   z-index: 1;
   box-shadow: rgba(190, 199, 208, 0.2) 0px 5px 15px;
 }
@@ -34,6 +35,7 @@
   h2 {
     font-family: "Cinzel", serif;
     color: $secondaryColor;
+    color: $thirdColor;
     font-size: 1.6rem;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
   }
@@ -45,8 +47,7 @@
     padding: 0rem 0.6rem;
     font-size: 1.25rem;
     color: $secondaryColor;
-    // font-family: "Cinzel", serif;.
-    // font-family: "Montserrat", sans-serif;
+    color: $thirdColor;
     font-family: "Fuzzy Bubbles", cursive;
     font-weight: 700;
     transition: 0.6s;
@@ -74,6 +75,11 @@
       width: 100%;
       max-width: 800px;
       padding: 0rem 2rem;
+    }
+  }
+  .logo {
+    h2 {
+      font-size: 1.2rem;
     }
   }
   .navbar {
@@ -126,6 +132,16 @@
     // }
   }
 }
+
+// @media (max-width: 600px) {
+//   .navbar-container {
+//     .navbar-inner {
+//       width: 100%;
+//       max-width: 400px;
+//       padding: 0rem 2rem;
+//     }
+//   }
+// }
 
 @media (max-width: 450px) {
   .navbar-container {

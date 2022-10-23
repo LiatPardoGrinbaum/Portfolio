@@ -12,7 +12,7 @@
   // background: url("../assets/colorful-abstract-nebula-space-background.jpg") no-repeat center center/cover;
   // background: rgb(16, 7, 23);
   background: $bg-color-1;
-  // background: rgb(28, 5, 47);
+  background: linear-gradient(180deg, $bg-color-1 25%, $brightgreen 100%);
 }
 .home-inner {
   display: flex;
@@ -26,13 +26,11 @@
   .home-inner-left {
     padding: 1.5rem;
     h1 {
-      // font-family: "Source Sans Pro", sans-serif;
-      font-family: "Montserrat", sans-serif;
       font-family: "Fuzzy Bubbles", cursive;
       font-size: 2.2rem;
     }
     .span_purple {
-      color: $secondaryColor;
+      color: $darkgreen;
       font-size: 2.6rem;
     }
     .span_white {
@@ -43,8 +41,8 @@
       background: $thirdColor;
       padding: 0.5rem 1rem;
       font-size: 1rem;
-      font-family: "Source Sans Pro", sans-serif;
-      font-family: "Montserrat", sans-serif;
+
+      font-family: $contentFont;
       color: white;
       margin-top: 1rem;
       border: 0.5px solid black;

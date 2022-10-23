@@ -6,6 +6,7 @@
   flex-direction: column;
   width: 100%;
   background: rgb(252, 247, 255);
+  background: linear-gradient(180deg, rgb(252, 247, 255) 25%, rgba(95, 160, 132, 0.268) 100%);
 }
 
 .home-inner {
@@ -21,12 +22,11 @@
   padding: 1.5rem;
 }
 .home-inner .home-inner-left h1 {
-  font-family: "Montserrat", sans-serif;
   font-family: "Fuzzy Bubbles", cursive;
   font-size: 2.2rem;
 }
 .home-inner .home-inner-left .span_purple {
-  color: rgb(148, 122, 205);
+  color: rgba(45, 158, 109, 0.522);
   font-size: 2.6rem;
 }
 .home-inner .home-inner-left .span_white {
@@ -36,7 +36,6 @@
   background: rgb(38, 0, 121);
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  font-family: "Source Sans Pro", sans-serif;
   font-family: "Montserrat", sans-serif;
   color: white;
   margin-top: 1rem;
@@ -97,6 +96,7 @@
   flex-direction: column;
   width: 100%;
   background: rgb(252, 247, 255);
+  background: linear-gradient(180deg, rgb(252, 247, 255) 25%, rgba(95, 160, 132, 0.268) 100%);
 }
 
 .home-inner {
@@ -112,12 +112,11 @@
   padding: 1.5rem;
 }
 .home-inner .home-inner-left h1 {
-  font-family: "Montserrat", sans-serif;
   font-family: "Fuzzy Bubbles", cursive;
   font-size: 2.2rem;
 }
 .home-inner .home-inner-left .span_purple {
-  color: rgb(148, 122, 205);
+  color: rgba(45, 158, 109, 0.522);
   font-size: 2.6rem;
 }
 .home-inner .home-inner-left .span_white {
@@ -127,7 +126,6 @@
   background: rgb(38, 0, 121);
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  font-family: "Source Sans Pro", sans-serif;
   font-family: "Montserrat", sans-serif;
   color: white;
   margin-top: 1rem;
@@ -182,6 +180,7 @@
 }
 #about {
   background: rgb(204, 190, 236);
+  background: rgba(95, 160, 132, 0.268);
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
@@ -214,7 +213,7 @@
   margin-top: 1rem;
 }
 #about .skills {
-  width: 50%;
+  width: 100%;
 }
 #about .skills .skills-container {
   display: flex;
@@ -274,7 +273,7 @@
   position: fixed;
   top: 0;
   transition: 0.4s ease;
-  background: rgb(255, 255, 255);
+  background: rgb(252, 247, 255);
   z-index: 1;
   box-shadow: rgba(190, 199, 208, 0.2) 0px 5px 15px;
 }
@@ -301,6 +300,7 @@
 .logo h2 {
   font-family: "Cinzel", serif;
   color: rgb(148, 122, 205);
+  color: rgb(38, 0, 121);
   font-size: 1.6rem;
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
@@ -316,6 +316,7 @@
   padding: 0rem 0.6rem;
   font-size: 1.25rem;
   color: rgb(148, 122, 205);
+  color: rgb(38, 0, 121);
   font-family: "Fuzzy Bubbles", cursive;
   font-weight: 700;
   transition: 0.6s;
@@ -339,6 +340,9 @@
     width: 100%;
     max-width: 800px;
     padding: 0rem 2rem;
+  }
+  .logo h2 {
+    font-size: 1.2rem;
   }
   .navbar {
     display: none;
@@ -393,6 +397,7 @@
 }
 #portfolio {
   background: rgb(252, 247, 255);
+  background: linear-gradient(0deg, rgb(252, 247, 255) 15%, rgba(95, 160, 132, 0.268) 100%);
   padding-top: 2rem;
   display: flex;
   justify-content: flex-start;
@@ -406,37 +411,40 @@
   align-items: flex-start;
   padding: 1rem;
   padding-top: 2rem;
-  width: 70%;
+  width: 100%;
   flex-direction: row;
   gap: 1.4rem;
   flex-wrap: wrap;
 }
 #portfolio .portfolio-container .project-box {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   padding: 1rem;
-  width: 100%;
-  height: 18rem;
-  margin-bottom: 1.5rem;
+  max-width: 100%;
+  min-height: 20rem;
   border-radius: 2rem;
   background: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#portfolio .portfolio-container .project-box .project-box-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
-#portfolio .portfolio-container .project-box .project-image {
+#portfolio .portfolio-container .project-box .project-box-inner .project-image {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
-  width: 25rem;
-  height: 100%;
+  width: 100%;
+  min-height: 20rem;
   background: rgba(207, 195, 213, 0.558);
+  background: rgba(95, 160, 132, 0.268);
   border-radius: 1rem;
 }
-#portfolio .portfolio-container .project-box .project-image img {
-  width: 100%;
+#portfolio .portfolio-container .project-box .project-box-inner .project-image img {
+  width: 25rem;
   border-radius: 1rem;
   -o-object-position: center;
      object-position: center;
@@ -444,15 +452,63 @@
   display: block;
   transition: 1s;
 }
-#portfolio .portfolio-container .project-box .project-image img:hover {
+#portfolio .portfolio-container .project-box .project-box-inner .project-image img:hover {
   box-shadow: rgba(14, 30, 37, 0.504) 0px 2px 4px 0px, rgba(14, 30, 37, 0.548) 0px 2px 16px 0px;
 }
-#portfolio .portfolio-container .project-box .project-content {
-  border: solid black 1px;
-  flex-grow: 1;
-  height: 100%;
+#portfolio .portfolio-container .project-box .project-box-inner .project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  background: rgba(207, 195, 213, 0.558);
+  background: rgba(95, 160, 132, 0.268);
+  border-radius: 1rem;
+  max-width: 45rem;
+  min-height: 20rem;
+}
+#portfolio .portfolio-container .project-box .project-box-inner .project-content h3 {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(38, 0, 121);
+  margin-bottom: 1rem;
+}
+#portfolio .portfolio-container .project-box .project-box-inner .project-content p {
+  margin: 0.4rem;
+  font-size: 1rem;
+}
+#portfolio .portfolio-container .project-box .project-box-inner .project-content .icon-links {
+  display: flex;
+  gap: 0.4rem;
+  margin: 0.5rem;
+}
+#portfolio .portfolio-container .project-box .project-box-inner .project-content .icon-links .fa-link,
+#portfolio .portfolio-container .project-box .project-box-inner .project-content .icon-links .fa-video,
+#portfolio .portfolio-container .project-box .project-box-inner .project-content .icon-links .fa-github {
+  font-size: 1.8rem;
+  color: rgb(103, 73, 168);
+  transition: 0.2s all ease-in-out;
+}
+#portfolio .portfolio-container .project-box .project-box-inner .project-content .icon-links .fa-link:hover,
+#portfolio .portfolio-container .project-box .project-box-inner .project-content .icon-links .fa-video:hover,
+#portfolio .portfolio-container .project-box .project-box-inner .project-content .icon-links .fa-github:hover {
+  color: rgba(45, 158, 109, 0.522);
 }
 
+@media (max-width: 1000px) {
+  #portfolio .portfolio-container .project-box .project-box-inner {
+    flex-direction: column;
+  }
+  #portfolio .portfolio-container .project-box .project-box-inner .project-content {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  #portfolio .portfolio-container .project-box .project-box-inner .project-content {
+    width: 100%;
+  }
+  #portfolio .portfolio-container .project-box .project-box-inner .project-image img {
+    width: 15rem;
+  }
+}
 .App {
   position: relative;
 }
