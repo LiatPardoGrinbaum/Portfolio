@@ -5,7 +5,7 @@ const Skill = ({ skillImg, skillTitle }) => {
     <div className="skill-box tooltip">
       <img src={skillImg} alt={skillTitle} />
 
-      <div class="bottom">
+      <div className="bottom">
         <h3>{skillTitle}</h3>
         <i></i>
       </div>

@@ -30,7 +30,7 @@ const About = () => {
         <div className=" skills">
           <div className="skills-container">
             {skills.map((skill) => {
-              return <Skill skillImg={skill.skillImg} skillTitle={skill.skillTitle} />;
+              return <Skill skillImg={skill.skillImg} skillTitle={skill.skillTitle} key={skill.skillTitle} />;
             })}
           </div>
 

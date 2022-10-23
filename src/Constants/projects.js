@@ -8,6 +8,7 @@ import bucketlist from "../assets/projects/bucketlist.png";
 import amazon from "../assets/projects/amazon.png";
 export const projects = [
   {
+    id: 1,
     name: "Wecome Events",
     description: "bla bla",
     technologies: " bla bla",
@@ -17,6 +18,7 @@ export const projects = [
     video: "video link if exist",
   },
   {
+    id: 2,
     name: "Tipper",
     description: "bla bla",
     technologies: " bla bla",
@@ -26,6 +28,7 @@ export const projects = [
     video: "video link if exist",
   },
   {
+    id: 3,
     name: "Spot and Share",
     description: "bla bla",
     technologies: " bla bla",
@@ -35,6 +38,7 @@ export const projects = [
     video: "video link if exist",
   },
   {
+    id: 4,
     name: "Portfolio",
     description: "bla bla",
     technologies: " bla bla",
@@ -44,6 +48,7 @@ export const projects = [
     video: "video link if exist",
   },
   {
+    id: 5,
     name: "Landing Page Generator",
     description: "bla bla",
     technologies: " bla bla",
@@ -54,6 +59,7 @@ export const projects = [
   },
 
   {
+    id: 6,
     name: "Dice Game",
     description: "bla bla",
     technologies: " bla bla",
@@ -64,6 +70,7 @@ export const projects = [
     video: "video link if exist",
   },
   {
+    id: 7,
     name: "Bucketlist",
     description: "bla bla",
     technologies: " bla bla",
@@ -73,6 +80,7 @@ export const projects = [
     video: "video link if exist",
   },
   {
+    id: 8,
     name: "Amazon product's page",
     description: "bla bla",
     technologies: " bla bla",

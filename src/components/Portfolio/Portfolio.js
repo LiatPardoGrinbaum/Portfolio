@@ -3,7 +3,7 @@ import ProjectDiv from "./ProjectDiv";
 const Portfolio = () => {
   const insertProjects = () => {
     return projects.map((project) => {
-      return <ProjectDiv project={project} />;
+      return <ProjectDiv project={project} key={project.id} id={project.id} />;
     });
   };
   return (

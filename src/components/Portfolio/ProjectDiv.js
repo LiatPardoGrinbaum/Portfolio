@@ -6,8 +6,9 @@ const ProjectDiv = ({ project }) => {
       <div className="project-image">
         <img src={project.image} alt={project.name} />
       </div>
-      <div className="project-content"></div>
-      <h1>{project.name}</h1>
+      <div className="project-content">
+        <h1>{project.name}</h1>
+      </div>
     </div>
   );
 };
