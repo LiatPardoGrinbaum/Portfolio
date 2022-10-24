@@ -79,7 +79,7 @@
   }
   .logo {
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   }
   .navbar {
@@ -91,7 +91,7 @@
     top: 4rem;
     left: 0;
     width: 100%;
-    background: rgb(28, 8, 44);
+    background: $secondaryColor;
     transition: all 0.5s ease-out;
     z-index: 2;
     li {
@@ -104,8 +104,8 @@
       cursor: pointer;
 
       &:hover {
-        color: white;
-        text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+        color: $thirdColor;
+        // text-shadow: 3px 3px 20px $thirdColor, -2px 1px 30px $thirdColor;
       }
     }
     a {
@@ -122,8 +122,8 @@
     position: absolute;
     font-size: 30px;
     color: $secondaryColor;
-    top: 0rem;
-    right: 1.2rem;
+    top: -0.1rem;
+    right: 1.5rem;
     background: transparent;
     border: none;
     outline: none;
@@ -147,8 +147,8 @@
   .navbar-container {
     .navbar-inner {
       width: 100%;
-      max-width: 400px;
-      padding: 0rem 2rem;
+      max-width: 350px;
+      padding: 0rem 1.3rem;
     }
   }
 }

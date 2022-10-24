@@ -350,7 +350,7 @@
     padding: 0rem 2rem;
   }
   .logo h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .navbar {
     display: none;
@@ -364,7 +364,7 @@
     top: 4rem;
     left: 0;
     width: 100%;
-    background: rgb(28, 8, 44);
+    background: rgb(148, 122, 205);
     transition: all 0.5s ease-out;
     z-index: 2;
   }
@@ -378,8 +378,7 @@
     cursor: pointer;
   }
   .navbar-mobile li:hover {
-    color: white;
-    text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+    color: rgb(38, 0, 121);
   }
   .navbar-mobile a {
     text-decoration: none;
@@ -389,8 +388,8 @@
     position: absolute;
     font-size: 30px;
     color: rgb(148, 122, 205);
-    top: 0rem;
-    right: 1.2rem;
+    top: -0.1rem;
+    right: 1.5rem;
     background: transparent;
     border: none;
     outline: none;
@@ -399,8 +398,8 @@
 @media (max-width: 450px) {
   .navbar-container .navbar-inner {
     width: 100%;
-    max-width: 400px;
-    padding: 0rem 2rem;
+    max-width: 350px;
+    padding: 0rem 1.3rem;
   }
 }
 #portfolio {
