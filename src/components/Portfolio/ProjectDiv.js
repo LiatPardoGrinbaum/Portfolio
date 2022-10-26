@@ -9,7 +9,7 @@ const ProjectDiv = ({ project }) => {
         </div>
         <div className="project-content">
           <h3>{project.name}</h3>
-          <p className="content-text ">
+          <p className="content-text " style={{ whiteSpace: "break-spaces" }}>
             <span style={{ color: " rgb(103, 73, 168)" }}>
               <strong>Description:</strong>
             </span>{" "}

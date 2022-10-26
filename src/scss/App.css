@@ -444,7 +444,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  width: 100%;
+  width: 30rem;
   min-height: 20rem;
   background: rgba(207, 195, 213, 0.558);
   background: rgba(95, 160, 132, 0.268);
@@ -505,7 +505,7 @@
     flex-direction: column;
   }
   #portfolio .portfolio-container .project-box .project-box-inner .project-content {
-    width: 100%;
+    width: 30rem;
   }
 }
 @media (max-width: 500px) {

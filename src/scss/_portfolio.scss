@@ -42,7 +42,7 @@
           justify-content: center;
           align-items: center;
           padding: 1rem;
-          width: 100%;
+          width: 30rem;
           min-height: 20rem;
           background: $bg-color-2;
           background: $brightgreen;
@@ -118,7 +118,7 @@
         .project-box-inner {
           flex-direction: column;
           .project-content {
-            width: 100%;
+            width: 30rem;
           }
         }
       }
