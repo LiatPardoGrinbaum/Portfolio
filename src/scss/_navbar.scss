@@ -146,9 +146,11 @@
 
 @media (max-width: 450px) {
   .navbar-container {
+    width: 100%;
+    max-width: 450px;
     .navbar-inner {
       width: 100%;
-      max-width: 300px;
+      max-width: 450px;
       padding: 0rem 1.3rem;
     }
   }
