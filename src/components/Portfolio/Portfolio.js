@@ -19,7 +19,7 @@ const Portfolio = () => {
     <section id="portfolio">
       <div className="title">
         <h1>
-          <span style={{ color: "rgb(38, 0, 121)" }}>My Projects</span>
+          <span style={{ color: "rgb(38, 0, 121)" }}>..• My Projects •..</span>
         </h1>
       </div>
       <div className="portfolio-container">{insertProjects()}</div>

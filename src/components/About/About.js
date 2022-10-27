@@ -11,7 +11,7 @@ const About = () => {
       <div className="about-container">
         <div className="title">
           <h1>
-            <span style={{ color: "rgb(38, 0, 121)" }}>About Me</span>
+            <span style={{ color: "rgb(38, 0, 121)" }}>..• About Me •..</span>
           </h1>
         </div>
         <Fade left duration={2000}>
@@ -20,8 +20,8 @@ const About = () => {
               I grduated Appleseeds Academy Full stack Bootcamp, and hold a bachelor degree in civil engineering from
               the Technion. <br></br>I have hands on experience with front-end and back-end technologies from the
               bootcamp and as an intern in a start-up company, and I keep learning all the time.<br></br>I have a
-              passion for coding and making great UI designs and currently looking for a position as a full stack
-              developer.<br></br>
+              passion for coding and making great UI designs and currently looking for a position as a full stack or
+              frontend developer.<br></br>
               <br></br>
             </p>
           </div>{" "}
@@ -34,7 +34,7 @@ const About = () => {
 
         <div className=" skills">
           <div className="skills-container">
-            <Rotate top right delay={500} duration={2000}>
+            <Rotate top right duration={2000}>
               {skills.map((skill) => {
                 return <Skill skillImg={skill.skillImg} skillTitle={skill.skillTitle} key={skill.skillTitle} />;
               })}
