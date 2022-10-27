@@ -367,9 +367,8 @@
 
 @media (max-width: 900px) {
   .navbar-container .navbar-inner {
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 100%;
-    max-width: 800px;
     padding: 0rem 2rem;
   }
   .logo h2 {
@@ -408,11 +407,8 @@
   }
   .mobile-menu-icon {
     display: block;
-    position: absolute;
     font-size: 30px;
     color: rgb(148, 122, 205);
-    top: -0.1rem;
-    right: 1.5rem;
     background: transparent;
     border: none;
     outline: none;
