@@ -23,14 +23,14 @@ const ProjectDiv = ({ project }) => {
           </p>
           <div className="icon-links">
             <a href={project.demo} target="blank" className="tooltip">
-              <i class="fa-solid fa-link"></i>
+              <i className="fa-solid fa-link"></i>
               <div className="bottom" style={{ top: "20px" }}>
                 <h3 style={{ color: " rgba(39, 135, 93, 0.67)" }}>Demo</h3>
                 <i></i>
               </div>
             </a>
             <a href={project.video} target="blank" className="tooltip">
-              <i class="fa-solid fa-video"></i>
+              <i className="fa-solid fa-video"></i>
               <div className="bottom" style={{ top: "20px" }}>
                 <h3 style={{ color: " rgba(39, 135, 93, 0.67)" }}>Video</h3>
                 <i></i>
@@ -38,7 +38,7 @@ const ProjectDiv = ({ project }) => {
             </a>
             {project.github && (
               <a href={project.github} target="blank" className="tooltip">
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
                 <div className="bottom" style={{ top: "20px" }}>
                   <h3 style={{ color: " rgba(39, 135, 93, 0.67)" }}>Github</h3>
                   <i></i>

@@ -1,9 +1,18 @@
 import { projects } from "../../Constants/projects";
 import ProjectDiv from "./ProjectDiv";
+import Fade from "react-reveal/Fade";
+import React from "react";
+
 const Portfolio = () => {
   const insertProjects = () => {
     return projects.map((project) => {
-      return <ProjectDiv project={project} key={project.id} id={project.id} />;
+      return (
+        <React.Fragment key={project.id}>
+          <Fade duration={3000}>
+            <ProjectDiv project={project} key={project.id} id={project.id} />{" "}
+          </Fade>
+        </React.Fragment>
+      );
     });
   };
   return (

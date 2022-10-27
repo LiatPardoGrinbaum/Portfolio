@@ -5,9 +5,8 @@
   min-height: 100vh;
   flex-direction: column;
   width: 100%;
-  position: relative;
   background: rgb(252, 247, 255);
-  background: linear-gradient(180deg, rgb(252, 247, 255) 25%, rgba(95, 160, 132, 0.268) 100%);
+  background: linear-gradient(180deg, rgb(252, 247, 255) 25%, rgba(95, 160, 110, 0.268) 100%);
 }
 
 .home-inner {
@@ -107,9 +106,8 @@
   min-height: 100vh;
   flex-direction: column;
   width: 100%;
-  position: relative;
   background: rgb(252, 247, 255);
-  background: linear-gradient(180deg, rgb(252, 247, 255) 25%, rgba(95, 160, 132, 0.268) 100%);
+  background: linear-gradient(180deg, rgb(252, 247, 255) 25%, rgba(95, 160, 110, 0.268) 100%);
 }
 
 .home-inner {
@@ -204,7 +202,7 @@
 }
 #about {
   background: rgb(204, 190, 236);
-  background: rgba(95, 160, 132, 0.268);
+  background: rgba(95, 160, 110, 0.268);
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
@@ -300,14 +298,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  position: fixed;
   width: 100%;
   height: 6rem;
   top: 0;
+  left: 0;
   transition: 0.4s ease;
   background: rgb(252, 247, 255);
   z-index: 1;
   box-shadow: rgba(190, 199, 208, 0.2) 0px 5px 15px;
-  position: fixed;
 }
 
 .navbar-active {
@@ -422,13 +421,12 @@
 @media (max-width: 450px) {
   .navbar-container .navbar-inner {
     width: 100%;
-    max-width: 350px;
     padding: 0rem 1.3rem;
   }
 }
 #portfolio {
   background: rgb(252, 247, 255);
-  background: linear-gradient(0deg, rgb(252, 247, 255) 15%, rgba(95, 160, 132, 0.268) 100%);
+  background: linear-gradient(0deg, rgb(252, 247, 255) 15%, rgba(95, 160, 110, 0.268) 100%);
   padding-top: 2rem;
   display: flex;
   justify-content: flex-start;
@@ -471,7 +469,7 @@
   width: 30rem;
   min-height: 20rem;
   background: rgba(207, 195, 213, 0.558);
-  background: rgba(95, 160, 132, 0.268);
+  background: rgba(95, 160, 110, 0.268);
   border-radius: 1rem;
 }
 #portfolio .portfolio-container .project-box .project-box-inner .project-image img {
@@ -492,7 +490,7 @@
   align-items: flex-start;
   padding: 1rem;
   background: rgba(207, 195, 213, 0.558);
-  background: rgba(95, 160, 132, 0.268);
+  background: rgba(95, 160, 110, 0.268);
   border-radius: 1rem;
   max-width: 45rem;
   min-height: 20rem;

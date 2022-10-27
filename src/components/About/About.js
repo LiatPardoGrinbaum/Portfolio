@@ -1,5 +1,7 @@
 import React from "react";
 import Skill from "./Skill";
+import Fade from "react-reveal/Fade";
+import Rotate from "react-reveal/Rotate";
 
 import { skills } from "../../Constants/skills";
 
@@ -12,15 +14,18 @@ const About = () => {
             <span style={{ color: "rgb(38, 0, 121)" }}>About Me</span>
           </h1>
         </div>
-        <div className=" content">
-          <p className="content-text">
-            I grduated Appleseeds Academy Full stack Bootcamp, and hold a bachelor degree in civil engineering from the
-            Technion. <br></br>I have hands on experience with front-end and back-end technologies from the bootcamp and
-            as an intern in a start-up company, and I keep learning all the time.<br></br>I have a passion for coding
-            and making great UI designs and currently looking for a position as a full stack developer.<br></br>
-            <br></br>
-          </p>
-        </div>
+        <Fade left duration={2000}>
+          <div className=" content">
+            <p className="content-text">
+              I grduated Appleseeds Academy Full stack Bootcamp, and hold a bachelor degree in civil engineering from
+              the Technion. <br></br>I have hands on experience with front-end and back-end technologies from the
+              bootcamp and as an intern in a start-up company, and I keep learning all the time.<br></br>I have a
+              passion for coding and making great UI designs and currently looking for a position as a full stack
+              developer.<br></br>
+              <br></br>
+            </p>
+          </div>{" "}
+        </Fade>
         <div className="title">
           <h1>
             <strong style={{ textAlign: "center" }}>My skills:</strong>
@@ -29,15 +34,17 @@ const About = () => {
 
         <div className=" skills">
           <div className="skills-container">
-            {skills.map((skill) => {
-              return <Skill skillImg={skill.skillImg} skillTitle={skill.skillTitle} key={skill.skillTitle} />;
-            })}
+            <Rotate top right delay={500} duration={2000}>
+              {skills.map((skill) => {
+                return <Skill skillImg={skill.skillImg} skillTitle={skill.skillTitle} key={skill.skillTitle} />;
+              })}
+            </Rotate>
           </div>
 
           {/* Skills icons by
-          <a target="blank" href="https://icons8.com">
+            <a target="blank" href="https://icons8.com">
             Icons8
-          </a>
+            </a>
           <p>links</p>*/}
         </div>
       </div>
