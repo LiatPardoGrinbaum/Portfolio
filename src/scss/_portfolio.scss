@@ -118,7 +118,7 @@
         .project-box-inner {
           flex-direction: column;
           .project-content {
-            width: 30rem;
+            max-width: 30rem;
           }
         }
       }
@@ -126,7 +126,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   #portfolio {
     .portfolio-container {
       .project-box {
@@ -135,8 +135,10 @@
             width: 100%;
           }
           .project-image {
+            width: 100%;
             img {
-              width: 15rem;
+              width: 100%;
+              // max-width: 25rem;
             }
           }
         }

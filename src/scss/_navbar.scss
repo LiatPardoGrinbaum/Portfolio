@@ -11,13 +11,14 @@
   @include flex(center, center, row);
   width: 100%;
   height: 6rem;
-  position: fixed;
   top: 0;
+
   transition: 0.4s ease;
   background: $bg-color-1;
   // background: $brightgreen;
   z-index: 1;
   box-shadow: rgba(190, 199, 208, 0.2) 0px 5px 15px;
+  position: fixed;
 }
 .navbar-active {
   // background: rgb(28, 5, 47);

@@ -9,6 +9,7 @@
 #home {
   @include flex(center, center, column);
   width: 100%;
+  position: relative;
   // background: url("../assets/colorful-abstract-nebula-space-background.jpg") no-repeat center center/cover;
   // background: rgb(16, 7, 23);
   background: $bg-color-1;
@@ -87,13 +88,30 @@
   .home-inner {
     gap: 0rem;
     width: 100%;
+    // .home-inner-left {
+    //   text-align: center;
+    //   width: 100%;
+    // }
+    .home-inner-right {
+      box-shadow: none;
+      background: none;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .home-inner {
     .home-inner-left {
       text-align: center;
       width: 100%;
     }
     .home-inner-right {
-      box-shadow: none;
-      background: none;
+      max-width: 25rem;
+      height: 25rem;
+      .home-inner-image {
+        margin: 0.5rem;
+        max-width: 20rem;
+        height: 20rem;
+      }
     }
   }
 }

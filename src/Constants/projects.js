@@ -10,8 +10,8 @@ export const projects = [
   {
     id: 1,
     name: "Wecome Events",
-    description: `Rsvp web softwere for managing events \n and invites. Project created as part of my participation as an intern a \nstart-up company.`,
-    technologies: "ReactJs (using libraries like react-table and react-paginate), node.js, express, mySQL",
+    description: `The project was built as part of my internship at outboxLtd.\nIt's an events management web application, both client and server side, for managing events and invites.`,
+    technologies: "ReactJs (using libraries like react-table and react-paginate), node.js, express, mySQL.",
     image: wecome,
     github: "",
     demo: "https://wecome-events.herokuapp.com",
