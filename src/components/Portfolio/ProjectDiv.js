@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProjectDiv = ({ project }) => {
+const ProjectDiv = ({ project, id }) => {
   return (
     <div className="project-box">
       <div className="project-box-inner">

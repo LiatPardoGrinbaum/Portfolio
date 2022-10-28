@@ -13,7 +13,7 @@
   // background: url("../assets/colorful-abstract-nebula-space-background.jpg") no-repeat center center/cover;
   // background: rgb(16, 7, 23);
   background: $bg-color-1;
-  background: linear-gradient(180deg, $bg-color-1 25%, $brightgreen 100%);
+  background: linear-gradient(180deg, $bg-color-1 25%, rgba(146, 130, 205, 0.268) 100%);
 }
 .home-inner {
   display: flex;
