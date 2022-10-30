@@ -2,12 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      {" "}
+    <section id="footer">
       <footer>
         <p>{new Date().getUTCFullYear()}</p> {/* Outputs 2022 */}
       </footer>
-    </div>
+    </section>
   );
 };
 
