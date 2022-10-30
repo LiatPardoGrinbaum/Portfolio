@@ -20,6 +20,10 @@
 }
 .home-inner .home-inner-left {
   padding: 1.5rem;
+  -webkit-animation-name: liat;
+          animation-name: liat;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 .home-inner .home-inner-left h1 {
   font-family: "Fuzzy Bubbles", cursive;
@@ -63,6 +67,10 @@
   background: white;
   border-radius: 50%;
   box-shadow: rgba(87, 59, 59, 0.274) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
+  -webkit-animation-name: liat;
+          animation-name: liat;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 .home-inner .home-inner-right .home-inner-image {
   margin: 0.5rem;
@@ -97,6 +105,22 @@
     margin: 0.5rem;
     max-width: 20rem;
     height: 20rem;
+  }
+}
+@-webkit-keyframes liat {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes liat {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 #home {
@@ -121,6 +145,10 @@
 }
 .home-inner .home-inner-left {
   padding: 1.5rem;
+  -webkit-animation-name: liat;
+          animation-name: liat;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 .home-inner .home-inner-left h1 {
   font-family: "Fuzzy Bubbles", cursive;
@@ -164,6 +192,10 @@
   background: white;
   border-radius: 50%;
   box-shadow: rgba(87, 59, 59, 0.274) 5px 13px 15px -5px, rgba(252, 247, 247, 0.3) 5px 8px 10px -8px;
+  -webkit-animation-name: liat;
+          animation-name: liat;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 .home-inner .home-inner-right .home-inner-image {
   margin: 0.5rem;
@@ -198,6 +230,14 @@
     margin: 0.5rem;
     max-width: 20rem;
     height: 20rem;
+  }
+}
+@keyframes liat {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 #about {
@@ -562,6 +602,21 @@
   width: 80%;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+#footer {
+  background: linear-gradient(180deg, rgba(146, 130, 205, 0.268) 25%, rgb(252, 247, 255) 100%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  flex-direction: column;
+}
+#footer footer p {
+  color: rgb(148, 122, 205);
+  font-family: "Montserrat", sans-serif;
 }
 
 .App {

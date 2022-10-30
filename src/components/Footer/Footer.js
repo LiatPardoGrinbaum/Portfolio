@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <section id="footer">
       <footer>
-        <p>{new Date().getUTCFullYear()}</p> {/* Outputs 2022 */}
+        <p>Liat Pardo Grinbaum {new Date().getUTCFullYear()}</p> {/* Outputs 2022 */}
       </footer>
     </section>
   );
