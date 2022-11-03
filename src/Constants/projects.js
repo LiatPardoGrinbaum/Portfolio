@@ -10,8 +10,8 @@ export const projects = [
   {
     id: 1,
     name: "Wecome Events",
-    description: `The project was built as part of my internship at outboxLtd.\nIt's an events management web application, both client and server side, for managing events and invites.`,
-    technologies: "ReactJs (using libraries like react-table and react-paginate), node.js, express, mySQL.",
+    description: `\nThe project was built as part of my internship at outboxLtd.\nIt's an events management web application, both client and server side, for managing events and invites.`,
+    technologies: "\nReactJs (react-table, react-paginate), SASS, Node.js, Express, MySQL.",
     image: wecome,
     github: "",
     demo: "https://wecome-events.herokuapp.com",
@@ -20,13 +20,13 @@ export const projects = [
   {
     id: 2,
     name: "Tipper",
-    description: "bla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla",
-    technologies:
-      " bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla",
+    description:
+      "\nEntertainment site for sharing tips in 6 different categories. Each user can sign up and write hisher tips, see other users' tips and rate them.",
+    technologies: "\nReactJs, SASS, Node.js, MongoDB, Express, Mongoose, Amazon S3, JWT. ",
     image: tipper,
-    github: "github link if exist",
-    demo: "demi link if exist",
-    video: "video link if exist",
+    github: "https://github.com/LiatPardoGrinbaum/Tipper",
+    demo: "https://final-project-liat.herokuapp.com/",
+    video: "",
   },
   {
     id: 3,
@@ -34,9 +34,9 @@ export const projects = [
     description: "bla bla",
     technologies: " bla bla",
     image: spotShare,
-    github: "github link if exist",
+    github: "",
     demo: "demi link if exist",
-    video: "video link if exist",
+    video: "",
   },
   {
     id: 4,

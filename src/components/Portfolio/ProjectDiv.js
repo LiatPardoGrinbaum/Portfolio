@@ -5,7 +5,9 @@ const ProjectDiv = ({ project, id }) => {
     <div className="project-box">
       <div className="project-box-inner">
         <div className="project-image">
-          <img src={project.image} alt={project.name} />
+          <a href={project.demo} target="blank">
+            <img src={project.image} alt={project.name} />
+          </a>
         </div>
         <div className="project-content">
           <h3>{project.name}</h3>
@@ -15,7 +17,7 @@ const ProjectDiv = ({ project, id }) => {
             </span>{" "}
             {project.description}
           </p>
-          <p className="content-text ">
+          <p className="content-text " style={{ whiteSpace: "break-spaces" }}>
             <span style={{ color: " rgb(103, 73, 168)" }}>
               <strong>Technologies:</strong>
             </span>{" "}
@@ -29,13 +31,15 @@ const ProjectDiv = ({ project, id }) => {
                 <i></i>
               </div>
             </a>
-            <a href={project.video} target="blank" className="tooltip">
-              <i className="fa-solid fa-video"></i>
-              <div className="bottom" style={{ top: "20px" }}>
-                <h3 style={{ color: " rgba(39, 135, 93, 0.67)" }}>Video</h3>
-                <i></i>
-              </div>
-            </a>
+            {project.video && (
+              <a href={project.video} target="blank" className="tooltip">
+                <i className="fa-solid fa-video"></i>
+                <div className="bottom" style={{ top: "20px" }}>
+                  <h3 style={{ color: " rgba(39, 135, 93, 0.67)" }}>Video</h3>
+                  <i></i>
+                </div>
+              </a>
+            )}
             {project.github && (
               <a href={project.github} target="blank" className="tooltip">
                 <i className="fa-brands fa-github"></i>

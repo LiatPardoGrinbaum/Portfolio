@@ -52,15 +52,18 @@
           background: rgba(146, 130, 194, 0.268);
 
           border-radius: 1rem;
+
           img {
             width: 25rem;
             border-radius: 1rem;
             object-position: center;
             box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
             display: block; //imporetent, removes gap between image and border
-            transition: 1s;
+            transition: 0.7s;
+
             &:hover {
               box-shadow: rgba(14, 30, 37, 0.504) 0px 2px 4px 0px, rgba(14, 30, 37, 0.548) 0px 2px 16px 0px;
+              transform: scale(1.1);
             }
           }
         }
@@ -73,7 +76,7 @@
           // background: $brightgreen;
           background: rgba(191, 179, 222, 0.268);
           border-radius: 1rem;
-          max-width: 45rem;
+          max-width: 42rem;
 
           min-height: 20rem;
           // object-fit: cover;
@@ -89,7 +92,7 @@
           .icon-links {
             display: flex;
             gap: 0.4rem;
-            margin: 0.5rem;
+            margin: 1.2rem 0.5rem;
             .fa-link,
             .fa-video,
             .fa-github {
