@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import { Alert } from "@mui/material";
+import React from "react";
+
 import ContactUs from "./ContactUs";
 import contactme from "../../assets/contactme.jpg";
 
 const Contact = () => {
   //!remove alert states and components to form component later
-  const [successAlert, setSuccessAlert] = useState(true);
-  const [failureAlert, setFailureAlert] = useState(true);
+
   return (
     <section id="contact">
       <div className="contact-container">
@@ -32,23 +31,7 @@ const Contact = () => {
             </div>
             <img src={contactme} alt="phone" width="400" style={{ opacity: "0.5" }} />
           </div>
-          {/*  {successAlert && (
-          <Alert
-            onClose={() => {
-              setSuccessAlert(false);
-            }}>
-            This is a success alert — check it out!
-          </Alert>
-        )}
-        {failureAlert && (
-          <Alert
-            severity="error"
-            onClose={() => {
-              setFailureAlert(false);
-            }}>
-            This is a success alert — check it out!
-          </Alert>
-        )} */}
+
           <div className="contact-form">
             <ContactUs />
           </div>
