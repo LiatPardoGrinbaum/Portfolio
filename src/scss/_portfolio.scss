@@ -19,7 +19,7 @@
     width: 100%;
 
     flex-direction: row;
-    gap: 1.4rem;
+    gap: 1.4rem 0rem;
     flex-wrap: wrap;
 
     .project-box {
@@ -126,6 +126,7 @@
       .project-box {
         .project-box-inner {
           flex-direction: column;
+
           .project-content {
             max-width: 30rem;
           }
