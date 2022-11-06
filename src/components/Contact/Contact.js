@@ -18,21 +18,24 @@ const Contact = () => {
             <div className="contact-way">
               <a href="tel:+972524555527">
                 {" "}
-                <i class="fa-solid fa-phone"></i>
+                <i className="fa-solid fa-phone"></i>
               </a>
               <a href="mailto:+972524555527">
                 {" "}
-                <i class="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope"></i>
               </a>
-              <i class="fa-brands fa-linkedin"></i>
-              <i className="fa-brands fa-github"></i>
+              <a href="https://www.linkedin.com/in/liat-pardo-grinbaum-43932b146/" target="blank">
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/LiatPardoGrinbaum" target="blank">
+                <i className="fa-brands fa-github"></i>
+              </a>
             </div>
             <img src={contactme} alt="phone" style={{ opacity: "0.5" }} />
           </div>
-
           <div className="contact-form">
             <ContactUs />
-          </div>
+          </div>{" "}
         </div>
       </div>
     </section>

@@ -16,18 +16,18 @@
   left: 0;
   transition: 0.4s ease;
   background: $bg-color-1;
-  // background: $brightgreen;
+
   z-index: 1;
   box-shadow: rgba(190, 199, 208, 0.2) 0px 5px 15px;
+  animation-name: navbar;
+  animation-duration: 2s;
 }
 .navbar-active {
-  // background: rgb(28, 5, 47);
   height: 4rem;
 }
 .navbar-inner {
   @include flex(center, space-between, row);
   width: 80%;
-  // padding: 2rem 2.5rem;
 
   align-items: baseline;
 }
@@ -59,7 +59,6 @@
     &:hover {
       transform: scale(1.1);
       border: 2px dotted $thirdColor;
-      // text-shadow: -2px 1px 10px $thirdColor, -2px 1px 30px $thirdColor;
     }
   }
   a {
@@ -74,9 +73,9 @@
   .navbar-container {
     .navbar-inner {
       justify-content: space-between; //logo to the left
-      //below I change these props because of Fade comp of react reveal which changes the properties...
+
       width: 100%;
-      // max-width: 800px;
+
       padding: 0rem 2rem;
     }
   }
@@ -108,7 +107,6 @@
 
       &:hover {
         color: $thirdColor;
-        // text-shadow: 3px 3px 20px $thirdColor, -2px 1px 30px $thirdColor;
       }
     }
     a {
@@ -118,33 +116,15 @@
 
   .mobile-menu-icon {
     display: block;
-    // position: absolute;
+
     font-size: 30px;
     color: $secondaryColor;
-    // top: -0.1rem;
-    // right: 1.5rem;
+
     background: transparent;
     border: none;
     outline: none;
-    // .fa-bars {
-    //   color: $secondaryColor;
-    // }
   }
-  // .navbar-inner {
-  //   align-items: center;
-  //   justify-content: center;
-  // }
 }
-
-// @media (max-width: 600px) {
-//   .navbar-container {
-//     .navbar-inner {
-//       width: 100%;
-//       max-width: 400px;
-//       padding: 0rem 2rem;
-//     }
-//   }
-// }
 
 @media (max-width: 450px) {
   .navbar-container {
@@ -160,5 +140,15 @@
     h2 {
       font-size: 1.1rem;
     }
+  }
+}
+
+@keyframes navbar {
+  from {
+    opacity: 0;
+    transform: translate(0, -50px);
+  }
+  to {
+    opacity: 1;
   }
 }

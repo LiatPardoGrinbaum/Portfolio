@@ -54,7 +54,7 @@ const NavbarComp = ({ isMobile, setIsMobile }) => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-60}
             duration={500}
             onClick={() =>
               setIsMobile((prev) => {

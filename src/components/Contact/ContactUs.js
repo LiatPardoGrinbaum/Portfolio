@@ -63,8 +63,16 @@ const ContactUs = () => {
         />
       </div>
       <input type="submit" value="Send Message" className="input-submit" />
-      {error && <p style={{ color: "red" }}>{error}</p>}
-      {success && <p style={{ color: "green" }}>{success}</p>}
+      {error && (
+        <p className="alert" style={{ color: "red" }}>
+          {error}
+        </p>
+      )}
+      {success && (
+        <p className="alert" style={{ color: "green" }}>
+          {success}
+        </p>
+      )}
     </form>
   );
 };

@@ -46,9 +46,8 @@
           align-items: center;
           padding: 1rem;
           width: 30rem;
-          min-height: 20rem;
-          // background: $bg-color-2;
-          // background: $brightgreen;
+          min-height: 22rem;
+
           background: rgba(146, 130, 194, 0.268);
 
           border-radius: 1rem;
@@ -76,9 +75,10 @@
           // background: $brightgreen;
           background: rgba(191, 179, 222, 0.268);
           border-radius: 1rem;
-          max-width: 42rem;
+          width: 42rem;
+          max-width: 100%;
 
-          min-height: 20rem;
+          min-height: 22rem;
           // object-fit: cover;
           h3 {
             font-family: $contentFont;
@@ -120,13 +120,37 @@
 //     }
 //   }
 // }
+@media (max-width: 1250px) {
+  #portfolio {
+    .portfolio-container {
+      .project-box {
+        .project-box-inner {
+          .project-image {
+            width: 25rem;
+            img {
+              width: 22rem;
+            }
+          }
+          .project-content {
+            max-width: 35rem;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1000px) {
   #portfolio {
     .portfolio-container {
       .project-box {
         .project-box-inner {
+          .project-image {
+            width: 30rem;
+            img {
+              width: 28rem;
+            }
+          }
           flex-direction: column;
-
           .project-content {
             max-width: 30rem;
           }
