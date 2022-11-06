@@ -4,8 +4,6 @@ import ContactUs from "./ContactUs";
 import contactme from "../../assets/contactme.jpg";
 
 const Contact = () => {
-  //!remove alert states and components to form component later
-
   return (
     <section id="contact">
       <div className="contact-container">
@@ -29,7 +27,7 @@ const Contact = () => {
               <i class="fa-brands fa-linkedin"></i>
               <i className="fa-brands fa-github"></i>
             </div>
-            <img src={contactme} alt="phone" width="400" style={{ opacity: "0.5" }} />
+            <img src={contactme} alt="phone" style={{ opacity: "0.5" }} />
           </div>
 
           <div className="contact-form">
