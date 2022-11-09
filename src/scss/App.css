@@ -539,6 +539,7 @@
   min-height: 22rem;
   background: rgba(146, 130, 194, 0.268);
   border-radius: 1rem;
+  overflow: hidden;
 }
 #portfolio .portfolio-container .project-box .project-box-inner .project-image img {
   width: 25rem;
@@ -547,11 +548,11 @@
      object-position: center;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   display: block;
-  transition: 0.7s;
+  transition: 1.7s;
 }
 #portfolio .portfolio-container .project-box .project-box-inner .project-image img:hover {
   box-shadow: rgba(14, 30, 37, 0.504) 0px 2px 4px 0px, rgba(14, 30, 37, 0.548) 0px 2px 16px 0px;
-  transform: scale(1.1);
+  transform: scale(2);
 }
 #portfolio .portfolio-container .project-box .project-box-inner .project-content {
   display: flex;

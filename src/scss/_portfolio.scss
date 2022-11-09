@@ -51,18 +51,18 @@
           background: rgba(146, 130, 194, 0.268);
 
           border-radius: 1rem;
-
+          overflow: hidden;
           img {
             width: 25rem;
             border-radius: 1rem;
             object-position: center;
             box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
             display: block; //imporetent, removes gap between image and border
-            transition: 0.7s;
+            transition: 1.7s;
 
             &:hover {
               box-shadow: rgba(14, 30, 37, 0.504) 0px 2px 4px 0px, rgba(14, 30, 37, 0.548) 0px 2px 16px 0px;
-              transform: scale(1.1);
+              transform: scale(2);
             }
           }
         }
