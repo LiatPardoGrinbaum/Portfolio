@@ -22,6 +22,9 @@ const Portfolio = () => {
           <span style={{ color: "rgb(38, 0, 121)" }}>..• My Projects •..</span>
         </h1>
       </div>
+      <p className="content-text" style={{ marginTop: "1rem" }}>
+        All of my projects are fully responsive - web and mobile.
+      </p>
       <div className="portfolio-container">{insertProjects()}</div>
     </section>
   );

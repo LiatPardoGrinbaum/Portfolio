@@ -77,7 +77,7 @@ export const projects = [
     id: 7,
     name: "Bucketlist",
     description:
-      "\nWe built this website during the bootcamp's Hackathon. The website displays various attractions and famous sites around the world and enables users to learn about these places. My part in this project was in the client side - quiz + attractions pages - both design and functionality.",
+      "\nWe built this website during the bootcamp's Hackathon. The website displays various attractions and famous sites around the world and enables users to learn about these places. My part in this project was in the client side - quiz + attractions pages - both design and functionality.\nPlease wait for loading (It takes a little bit of time).",
     technologies: "\nReactJs, MonggoDB, Mongoose, Express, Puppeteer, Microsoft translator Text Api.",
     image: bucketlist,
     github: "https://github.com/bnGil/appleseeds-hackathon",
