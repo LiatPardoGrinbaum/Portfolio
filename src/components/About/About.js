@@ -22,6 +22,7 @@ const About = () => {
               bootcamp and as an intern in a start-up company, and I keep learning all the time.<br></br>I love coding
               and have a real passion for frontend development, and I'm currently looking for a position as a full stack
               or frontend developer.<br></br>
+              
               <br></br>
             </p>
           </div>{" "}
