@@ -13,18 +13,19 @@ const Home = () => {
           <h1 className="span_purple"> I am Liat</h1>
 
           <h1 className="span_white">A Full Stack Developer</h1>
-          {/*  <a href="https://www.freepik.com/photos/dark-purple">
-            Dark purple photo created by rawpixel.com - www.freepik.com
-          </a> */}
-          <a
-            href="https://drive.google.com/file/d/1kV1sCEKfzwpRILr08Zwbom-iDtwKMKkY/view?usp=sharing"
-            download
-            target="blank">
-            <button>
-              <i className="fa-solid fa-file-arrow-down"></i>
-              Download Resume
-            </button>{" "}
-          </a>
+
+          <div className="contact-homepage">
+            <a href="mailto:pardo.liat@gmail.com">
+              {" "}
+              <i className="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/liat-pardo-grinbaum-43932b146/" target="blank">
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/LiatPardoGrinbaum" target="blank">
+              <i className="fa-brands fa-github"></i>
+            </a>
+          </div>
         </div>
         {/* </Fade> */}
         {/* <Fade right duration={2000}> */}

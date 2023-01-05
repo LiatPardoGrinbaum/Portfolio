@@ -55,7 +55,7 @@ export const projects = [
     name: "Landing Page Generator",
     description:
       "\nIn this project you can sign up and login to create your own landing pages. There are 3 different categories: Events, Products and Job offer.",
-    technologies: "\nReactJS, CSS (SASS), NodeJS, Strapi (headless CMS), Amazon s3 storgae services.",
+    technologies: "\nReactJS, CSS (SASS), NodeJS, Strapi (headless CMS), Amazon s3 storage services.",
     image: landing,
     github: "https://github.com/LiatPardoGrinbaum/landing-pages-generator-front",
     demo: "https://landing-page-generator.netlify.app/",

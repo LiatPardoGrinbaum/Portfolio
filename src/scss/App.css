@@ -19,6 +19,8 @@
   width: 80%;
 }
 .home-inner .home-inner-left {
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem;
   -webkit-animation-name: liat;
           animation-name: liat;
@@ -55,6 +57,30 @@
 .home-inner .home-inner-left .fa-file-arrow-down {
   font-size: 1.2rem;
   margin-right: 0.5rem;
+}
+.home-inner .home-inner-left .contact-homepage {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.home-inner .home-inner-left .contact-homepage a {
+  text-decoration: none;
+}
+.home-inner .home-inner-left .contact-homepage .fa-envelope,
+.home-inner .home-inner-left .contact-homepage .fa-linkedin,
+.home-inner .home-inner-left .contact-homepage .fa-github {
+  font-size: 2rem;
+  color: rgba(45, 158, 109, 0.522);
+}
+.home-inner .home-inner-left .contact-homepage .fa-envelope:hover,
+.home-inner .home-inner-left .contact-homepage .fa-linkedin:hover,
+.home-inner .home-inner-left .contact-homepage .fa-github:hover {
+  transform: scale(1.3);
+}
+.home-inner .home-inner-left .contact-homepage .fa-github:hover,
+.home-inner .home-inner-left .contact-homepage .fa-envelope:hover,
+.home-inner .home-inner-left .contact-homepage .fa-linkedin:hover {
+  color: rgb(38, 0, 121);
 }
 .home-inner .home-inner-right {
   display: flex;
@@ -95,6 +121,7 @@
 @media (max-width: 950px) {
   .home-inner .home-inner-left {
     text-align: center;
+    align-items: center;
     width: 100%;
   }
   .home-inner .home-inner-right {
@@ -144,6 +171,8 @@
   width: 80%;
 }
 .home-inner .home-inner-left {
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem;
   -webkit-animation-name: liat;
           animation-name: liat;
@@ -180,6 +209,30 @@
 .home-inner .home-inner-left .fa-file-arrow-down {
   font-size: 1.2rem;
   margin-right: 0.5rem;
+}
+.home-inner .home-inner-left .contact-homepage {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.home-inner .home-inner-left .contact-homepage a {
+  text-decoration: none;
+}
+.home-inner .home-inner-left .contact-homepage .fa-envelope,
+.home-inner .home-inner-left .contact-homepage .fa-linkedin,
+.home-inner .home-inner-left .contact-homepage .fa-github {
+  font-size: 2rem;
+  color: rgba(45, 158, 109, 0.522);
+}
+.home-inner .home-inner-left .contact-homepage .fa-envelope:hover,
+.home-inner .home-inner-left .contact-homepage .fa-linkedin:hover,
+.home-inner .home-inner-left .contact-homepage .fa-github:hover {
+  transform: scale(1.3);
+}
+.home-inner .home-inner-left .contact-homepage .fa-github:hover,
+.home-inner .home-inner-left .contact-homepage .fa-envelope:hover,
+.home-inner .home-inner-left .contact-homepage .fa-linkedin:hover {
+  color: rgb(38, 0, 121);
 }
 .home-inner .home-inner-right {
   display: flex;
@@ -220,6 +273,7 @@
 @media (max-width: 950px) {
   .home-inner .home-inner-left {
     text-align: center;
+    align-items: center;
     width: 100%;
   }
   .home-inner .home-inner-right {

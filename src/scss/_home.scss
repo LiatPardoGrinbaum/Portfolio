@@ -25,6 +25,9 @@
   width: 80%;
 
   .home-inner-left {
+    display: flex;
+    flex-direction: column;
+
     padding: 1.5rem;
     animation-name: liat;
     animation-duration: 4s;
@@ -60,6 +63,32 @@
     .fa-file-arrow-down {
       font-size: 1.2rem;
       margin-right: 0.5rem;
+    }
+
+    .contact-homepage {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+
+      a {
+        text-decoration: none;
+      }
+
+      .fa-envelope,
+      .fa-linkedin,
+      .fa-github {
+        font-size: 2rem;
+        color: $darkgreen;
+
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+      .fa-github:hover,
+      .fa-envelope:hover,
+      .fa-linkedin:hover {
+        color: $thirdColor;
+      }
     }
   }
   .home-inner-right {
@@ -106,6 +135,7 @@
   .home-inner {
     .home-inner-left {
       text-align: center;
+      align-items: center;
       width: 100%;
     }
     .home-inner-right {

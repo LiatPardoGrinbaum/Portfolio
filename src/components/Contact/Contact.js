@@ -20,7 +20,7 @@ const Contact = () => {
                 {" "}
                 <i className="fa-solid fa-phone"></i>
               </a>
-              <a href="mailto:+972524555527">
+              <a href="mailto:pardo.liat@gmail.com">
                 {" "}
                 <i className="fa-solid fa-envelope"></i>
               </a>
