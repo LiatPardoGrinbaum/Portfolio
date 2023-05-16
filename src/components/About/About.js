@@ -18,10 +18,10 @@ const About = () => {
           <div className=" content">
             <p className="content-text">
               I have graduated from Appleseeds' Full stack Bootcamp, and hold a B.Sc. in civil engineering from the
-              Technion I.I.T. <br></br>I have hands-on experience with front-end and back-end technologies from
-              Appleseeds' Bootcamp and as an intern in a start-up company, and I keep learning all the time.<br></br>I
-              love coding and have a real passion for implementing and developing new solutions.<br></br>
-              <br></br>
+              Technion I.I.T. I have hands-on experience with front-end and back-end technologies from Appleseeds'
+              Bootcamp and as an intern in a start-up company. <br></br> I love coding and have a real passion for
+              implementing and developing new solutions. I enjoy learning new technologies, have great communication
+              skills, and I am currently looking for a new opportunity in the tech industry.
             </p>
           </div>{" "}
         </Fade>
