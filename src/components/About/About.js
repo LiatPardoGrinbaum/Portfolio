@@ -17,12 +17,10 @@ const About = () => {
         <Fade left duration={2000}>
           <div className=" content">
             <p className="content-text">
-              I have graduated from Appleseeds' Full stack Bootcamp, and hold a bachelor degree in civil engineering
-              from the Technion. <br></br>I have hands on experience with front-end and back-end technologies from the
-              bootcamp and as an intern in a start-up company, and I keep learning all the time.<br></br>I love coding
-              and have a real passion for frontend development, and I'm currently looking for a position as a full stack
-              or frontend developer.<br></br>
-              
+              I have graduated from Appleseeds' Full stack Bootcamp, and hold a B.Sc. in civil engineering from the
+              Technion I.I.T. <br></br>I have hands-on experience with front-end and back-end technologies from
+              Appleseeds' Bootcamp and as an intern in a start-up company, and I keep learning all the time.<br></br>I
+              love coding and have a real passion for implementing and developing new solutions.<br></br>
               <br></br>
             </p>
           </div>{" "}
